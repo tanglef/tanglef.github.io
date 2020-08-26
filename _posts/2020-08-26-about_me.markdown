@@ -1,0 +1,13 @@
+---
+title:  "About me"
+date: 2020-08-26 23:06:10 +0200
+categories: jekyll-update
+author_profile: true
+---
+
+# In short
+
+Hi, I'm Tanguy Lefort A.K.A tanglef. I'm 20.
+
+I'm currently a student in second year of a **master's degree in biostatistics** in Montpellier, France.
+
