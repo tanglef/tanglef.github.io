@@ -30,6 +30,8 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+include: ["_pages"]
+
 
 defaults:
   # _posts
@@ -38,11 +40,22 @@ defaults:
       type: posts
     values:
       layout: single
-      read_time: true
       comments: true
       share: true
-      related: true
       author_profile: true
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+#      toc: true
+#      toc_label: "Contents"
+#      toc_icon: "swatchbook"
+#      sidebar: main
 
 
 author:
@@ -60,6 +73,15 @@ author:
     - label: "Reddit"
       icon: "fab fa-fw fa-reddit"
       url: "https://www.reddit.com/user/tanglef"
+
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
