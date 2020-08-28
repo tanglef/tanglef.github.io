@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Tanguy Lefort'
+title: 'About me'
 author_profile: true
 ---
 
