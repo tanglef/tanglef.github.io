@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-include: ["_pages"]
+include: ["_pages", "_data"]
 
 
 defaults:

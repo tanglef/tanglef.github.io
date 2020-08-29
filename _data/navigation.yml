@@ -5,3 +5,5 @@ main:
     url: https://tanglef.github.io
   - title: "Schools"
     url: /schools/
+  - title: "Projects"
+    url: /projects/
