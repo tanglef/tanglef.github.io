@@ -7,3 +7,5 @@ main:
     url: /schools/
   - title: "Projects"
     url: /projects/
+  - title: "Reminders"
+    url: /reminders/

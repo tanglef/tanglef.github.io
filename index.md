@@ -4,8 +4,6 @@ title: 'About me'
 author_profile: true
 ---
 
-# Who am I?
-
 Hi, I'm Tanguy Lefort A.K.A tanglef. I'm 20.
 
 I'm currently a student in second year of a **master's degree in biostatistics** in Montpellier, France.
