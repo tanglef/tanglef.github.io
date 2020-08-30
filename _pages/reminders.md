@@ -3,7 +3,6 @@ title: Reminders
 layout: collection
 permalink: /reminders/
 collection: reminders
-entries_layout: grid
 classes: wide
 ---
 
