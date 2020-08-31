@@ -35,9 +35,34 @@ shiny_app:
     url: "https://github.com/tanglef/proba_shiny_app"
     btn_label: "Find Out More"
     btn_class: "btn--primary"
+
+chaoseverywhere:
+  - image_path: https://chaoseverywhere.readthedocs.io/en/latest/_images/3d_vision.svg
+    alt: "mandelbrot_3D"
+    title: "3D speed of convergence in the Mandelbrot set"
+    excerpt: "Use of the `Mayavi` library to make 3D visualizations."
+    url: "https://github.com/tanglef/chaoseverywhere/"
+    btn_label: "Find Out More"
+    btn_class: "btn--primary"
+  - image_path: https://chaoseverywhere.readthedocs.io/en/latest/_static/logo1_f.svg
+    alt: "logo"
+    title: "Package logo"
+    excerpt: "When the bifurcation diagram and the Mandelbrot set collide... That makes **Chaoseverywhere**."
+  - image_path: https://chaoseverywhere.readthedocs.io/en/latest/_images/3d_transform.svg
+    title: "Transformed Mandelbrot set"
+    excerpt: "Let the user apply any transformation on the Mandelbrot sequence."
 ---
 
 {% include feature_row id="intro" type="center" %}
+
+## Chaoseverywhere package
+
+ The main goal of this project was to create a **fully-documented Python package** that allows the user to visualization the link between the bifurcation diagram of the logistic map and the Mandelbrot set. Software Devlopment group project. Made with Coiffier Ophélie and Gaizi Ibrahim.
+
+<a href="https://chaoseverywhere.readthedocs.io/en/latest/index.html" class="btn btn-primary">Click here to go see the doc</a>
+(don't forget to take a look at the <a href="https://chaoseverywhere.readthedocs.io/en/latest/chaos/gallery_mayavi/gallery_mayavi.html" class="btn btn-primary">galleries</a>)!
+
+ {% include feature_row id="chaoseverywhere" %}
 
 ## Radio-surgery: bachelor degree final project
  Bachelor degree project with Clémence Roumier and Caroline Tresse on the **skeletonization** of a shape and how to **cover the most** of it with predefined-sizes rays. Methods based on *Mathématiques et technologie* by Yvan Saint-Aubin and Christiane Rousseau (Springer 2009).
@@ -46,7 +71,7 @@ shiny_app:
 
 ## Rshiny app for interactive probabilities
  R-Shiny app to **visualize probability distributions**, make some **probability computations** easily and **interactive** disctionnary for a general bachelor-level theorems and definitions in probabilities and statistics. This was mainly to discover bymyself the interactivity with the *R* programming and make it useful.
-[Give it a try!](https://tanguylefort.shinyapps.io/probas/){: .btn}
+
+<a href="https://tanguylefort.shinyapps.io/probas/" class="btn btn-primary">Give it a try!</a>
 
 {% include feature_row id="shiny_app" type="left" %}
-
