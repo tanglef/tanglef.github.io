@@ -112,6 +112,16 @@ vi <file>  #open the default terminal editor, :q to exit
 which <executable>
 ```
 
+* Unzip folder
+
+```sh
+tar -xvf <file>.tar
+tar zxvf <file>.tar.gz
+unzip <file>.zip -d <directory>
+``̀
+With `unzip`, use `-o` to overwrite.
+
+
 * Some Windows equivalents
 For some commands, Unix and Windows are the same. Just try and/or Google it (especially don't try if it might be dangerous).
 
