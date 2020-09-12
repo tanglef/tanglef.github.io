@@ -50,6 +50,7 @@ defaults:
       comments: true
       share: true
       author_profile: true
+      classes: wide
 
   # _pages
   - scope:
@@ -58,6 +59,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+      classes: wide
 
   # _reminders
   - scope:
@@ -72,6 +74,8 @@ defaults:
       toc_label: "Contents"
       toc_icon: "swatchbook"
       sidebar: main
+      classes: wide
+      usemathjax: true
 
 
 author:
@@ -92,7 +96,7 @@ author:
   gitlab           :
   google_plus      :
   keybase          :
-  instagram        : "tanguy_lef"
+  instagram        : #"tanguy_lef"
   lastfm           :
   linkedin         : "tanguy-lefort-5b1b47136" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :

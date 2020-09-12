@@ -118,7 +118,8 @@ which <executable>
 tar -xvf <file>.tar
 tar zxvf <file>.tar.gz
 unzip <file>.zip -d <directory>
-``̀
+```
+
 With `unzip`, use `-o` to overwrite.
 
 
