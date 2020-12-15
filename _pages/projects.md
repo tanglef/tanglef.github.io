@@ -31,7 +31,7 @@ shiny_app:
   - image_path: /_data/images/shiny_app.png
     alt: "main page app"
     title: "Presentation of the app"
-    excerpt: "Due to `shinyapps.io` time and memory limitations per-months, the app might not be always available."
+    excerpt: "Due to `shinyapps.io` time and memory limitations per-months, the app might not be always available, hence the local run option."
     url: "https://github.com/tanglef/proba_shiny_app"
     btn_label: "Find Out More"
     btn_class: "btn--primary"
@@ -70,7 +70,15 @@ chaoseverywhere:
 {% include feature_row id="surgery" %}
 
 ## Rshiny app for interactive probabilities
- R-Shiny app to **visualize probability distributions**, make some **probability computations** easily and **interactive** disctionnary for a general bachelor-level theorems and definitions in probabilities and statistics. This was mainly to discover bymyself the interactivity with the *R* programming and make it useful.
+ R-Shiny app to **visualize probability distributions**, make some **probability computations** easily and **interactive** dictionnary for a general bachelor-level theorems and definitions in probabilities and statistics. This was mainly to discover by my self the interactivity with the *R* programming and make it useful.
+
+ If you prefer to run it locally, open **RStudio** or any alternative and enter in the console the following lines. You might need to install a few packages first.
+
+```R
+# install.packages(c("shiny", "plotly", "rsconnect", "shinydashboard"))
+library(shiny)
+runGitHub( "proba_shiny_app", "tanglef")
+``` 
 
 <a href="https://tanguylefort.shinyapps.io/probas/" class="btn btn-primary">Give it a try!</a>
 
