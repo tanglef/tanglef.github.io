@@ -30,7 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
-google_analytics: "G-3ZLB8M2YKJ"
+google-site-verification: "OgwS0LYcWEjpM3fh5E4_HJEz8lFsyImPleGVt4alYe0"
 include: ["_pages", "_data", "reminders"]
 
 
@@ -116,7 +116,7 @@ author:
       url: "https://www.reddit.com/user/tanglef"
 
 
-# Site Footer
+# Site
 footer:
   links:
     - label: "GitHub"
