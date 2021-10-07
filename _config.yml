@@ -30,6 +30,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+google_analytics: "G-3ZLB8M2YKJ"
 include: ["_pages", "_data", "reminders"]
 
 
