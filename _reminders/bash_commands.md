@@ -57,7 +57,7 @@ pwd        #print working directory
 **Be very careful with that one!**
 
 ```sh
-rm -r 
+rm -r
 ```
 
 * Show files in a directory
@@ -77,7 +77,7 @@ man <fctn>
 * Search commands
 
 ```sh
-grep <regexp> <path> 
+grep <regexp> <path>
 ```
 The `-C` flags show the number of the lines, `-c` counts the number of lines, `-l` the name of the files containing the chain of characters.
 
@@ -200,7 +200,7 @@ date --date='23 Nov' +%u #which week day for my birthday?
 * In Windows
 
 ```sh
-date 
+date
 time
 ```
 
@@ -221,6 +221,6 @@ nvidia-smi
 ## Visualize site locally
 
 ```sh
-bundle exec jekyll clean  #clean slate
-bundle exec jekyll serve  #make it available locally
+bundle-2.7 exec jekyll clean  #clean slate
+bundle-2.7 exec jekyll serve  #make it available locally
 ```
