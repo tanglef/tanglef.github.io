@@ -31,7 +31,7 @@ plugins:
   - jekyll-include-cache
 
 google-site-verification: "OgwS0LYcWEjpM3fh5E4_HJEz8lFsyImPleGVt4alYe0"
-include: ["_pages", "_data", "reminders", "_layouts", "_teachings"]
+include: ["_pages", "_data", "_reminders", "_layouts", "_teachings"]
 
 
 collections:
