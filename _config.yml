@@ -31,11 +31,14 @@ plugins:
   - jekyll-include-cache
 
 google-site-verification: "OgwS0LYcWEjpM3fh5E4_HJEz8lFsyImPleGVt4alYe0"
-include: ["_pages", "_data", "reminders", "_layouts"]
+include: ["_pages", "_data", "reminders", "_layouts", "_teachings"]
 
 
 collections:
   reminders:
+    output: true
+    permalink: /:collection/:path/
+  teachings:
     output: true
     permalink: /:collection/:path/
 
@@ -69,7 +72,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
       output: true
       toc: true
       toc_label: "Contents"
@@ -77,6 +80,23 @@ defaults:
       sidebar: main
       classes: wide
       usemathjax: true
+
+  # _teachings
+  - scope:
+      path: ""
+      type: teachings
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      output: true
+      toc: true
+      toc_label: "Contents"
+      toc_icon: "swatchbook"
+      sidebar: main
+      classes: wide
+      usemathjax: true
+
 
 
 author:

@@ -7,7 +7,8 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
 intro:
-  - excerpt: "These are some of the projects that I made. Some were mandatory for my courses, others just for fun or in my curious mood."
+  - excerpt: "These are some of the projects that I made. Some
+  are from my PhD. Some were mandatory for my courses, others just for fun or in my curious mood."
 
 
 surgery:
@@ -78,7 +79,7 @@ chaoseverywhere:
 # install.packages(c("shiny", "plotly", "rsconnect", "shinydashboard"))
 library(shiny)
 runGitHub( "proba_shiny_app", "tanglef")
-``` 
+```
 
 <a href="https://tanguylefort.shinyapps.io/probas/" class="btn btn-primary">Give it a try!</a>
 

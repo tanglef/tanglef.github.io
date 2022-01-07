@@ -15,7 +15,7 @@ $           #end of a line
 *           #anything
 ```
 
-* Occurences for a character
+* Occurrences for a character
 
 ```sh
 x*         #x appears at least zero times
