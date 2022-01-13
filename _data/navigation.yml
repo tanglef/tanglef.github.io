@@ -1,11 +1,13 @@
 # main links links
 
 main:
-  - title: "Small CV"
-    url: /cv/
+  - title: "Research"
+    url: /research/
   - title: "Projects"
     url: /projects/
-  - title: "Reminders"
-    url: /reminders/
   - title: "Teachings"
     url: /teachings/
+  - title: "Reminders"
+    url: /reminders/
+  - title: "CV"
+    url: /cv/
