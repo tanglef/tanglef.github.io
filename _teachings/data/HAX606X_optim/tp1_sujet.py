@@ -17,8 +17,9 @@ import matplotlib.pyplot as plt
 1 + 3  # commentaire en ligne
 
 # %%
+###############################################################################
 # # Question(Dépassement)
-
+###############################################################################
 # Rem: noqa = no quality assurance
 import sys  # noqa
 
@@ -33,7 +34,9 @@ print(n_max * ...)
 print(...)
 
 # %%
+###############################################################################
 # # Question(Soupassement)
+###############################################################################
 # La fonction `range` permet de générer tous les entiers entre deux valeurs
 # par défaut, elle commence à 0 et a un pas de 1.
 
@@ -54,7 +57,9 @@ for idx, val in enumerate(n_petits[::-1]):
 print(idx, val)
 
 # %%
+###############################################################################
 # # Question(Arrondis):
+###############################################################################
 
 print(10 ** 9 == 10 ** 9 + 10 ** (-8))
 print(10 ** 9, 10 ** 9 + 10 ** (-8))
@@ -75,6 +80,10 @@ print(0.6 == 0.1 + 0.2 + 0.3)
 print(0.6, 0.1 + 0.2 + 0.3)
 
 # %%
+###############################################################################
+# # Question(Précision relative / absolue)
+###############################################################################
+
 # https://docs.python.org/3/tutorial/floatingpoint.html
 
 help(np.isclose)
@@ -86,7 +95,9 @@ np.isclose(0.6, 0.1 + 0.2, +0.3, atol=..., rtol=...)  # XXX TODO
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # %%
+###############################################################################
 # Question(Algèbre linéaire)
+###############################################################################
 # Une matrice est seulement une liste de listes (une par ligne) en `numpy`.
 
 
@@ -207,7 +218,10 @@ d = np.arange(6)
 # XXX TODO
 
 # %%
+###############################################################################
 # # Question(Affichage de fonctions 1D)
+###############################################################################
+
 # XXX TODO
 x = np.linspace(...)
 y = ...
@@ -238,7 +252,9 @@ plt.show()
 
 
 # %%
-# # Graphes multiples
+###############################################################################
+# # Question(Graphes multiples)
+###############################################################################
 # Lise de couleurs, dégradé de violet:
 colors = plt.cm.Purples(np.linspace(0.3, 1, 5))
 lambdas = np.arange(1, 6)
@@ -269,8 +285,10 @@ axs[1].legend(loc=3)
 # axs[2].yaxis.set_major_formatter(ticker.FuncFormatter(mimic_ticks))
 # plt.tight_layout()
 
-
-# %% Question(Conditions du premier et deuxième ordre):
+# %%
+###############################################################################
+# # Question(Conditions du premier et deuxième ordre):
+###############################################################################
 
 # Créer une grille de points avec meshgrid: exemple
 
@@ -339,7 +357,10 @@ ax1.scatter(..., alpha=..., zorder=2)
 ax2.scatter(...)
 plt.show()
 
-# %% Question(Dérivées directionnelles):
+# %%
+###############################################################################
+# # Question(Dérivées directionnelles):
+###############################################################################
 
 
 def z(x, y):
@@ -374,7 +395,7 @@ speed = np.sqrt(dX * dX + dY * dY)
 fig = plt.figure(figsize=(8, 4))
 ax = fig.add_subplot(1, 2, 2)
 # im = ax.imshow(Z, cmap=cm.RdBu_r)
-im = ax.contourf(X, Y, Z, levels=30, cmap="RdBu_r")
+im = ax.contourf(X, Y, Z, levels=30, cmap="RdBu_r")  # XXX TODO
 ax.streamplot(X, Y, dX, dY, color="k", linewidth=5 * speed / speed.max())
 ax.set_xlim([x.min(), x.max()])
 ax.set_ylim([y.min(), y.max()])
@@ -415,8 +436,10 @@ plt.tight_layout(pad=3.0)
 plt.show()
 
 # %%
+###############################################################################
 # L'aléatoire en Python
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###############################################################################
+
 # Pour obtenir des nombres aléatoires, on crée un générateur d'abord
 # Créer une matrice (4, 5) iid d'une loi de Laplace d'espérance 0
 # et de variance 2
