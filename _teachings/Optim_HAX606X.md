@@ -15,6 +15,6 @@ $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
 - sujet: [pdf]({{ site.url }}/_teachings/data/HAX606X_optim/tp1_sujet.pdf)
 - code: [py]({{ site.url }}/_teachings/data/HAX606X_optim/tp1_sujet.py)
 
-## TP2: Premiers algorithmes 1D
+## TP2: First 1D algorithms: bissection and golden search methods
 
 - sujet: [pdf]({{ site.url }}/_teachings/data/HAX606X_optim/tp2_sujet.pdf)
