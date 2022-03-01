@@ -1,22 +1,23 @@
 ---
 title: "Research"
-layout: splash
 permalink: /research/
 author_profile: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
 intro:
-  - excerpt: "Talks, publications and scientific communication in general"
+  - excerpt: "Scientific communication: including talks, (pre)-publications, code and slides when available. *In fine* the serious page."
+
+classes: wide
 ---
 
 {% include feature_row id="intro" type="center" %}
 
-## Publications
+# Publications
 
 None yet
 
-## Talks
+# Talks
 
 - <details><summary>
 November 29 2021: <i>High dimensional optimization for penalized linear models with interactions using graphics card computational power</i>, at Probability and statistics (EPS) team seminar - Univ. Montpellier (content from my master's thesis internship)</summary> <b>Abstract:</b>

@@ -144,7 +144,7 @@ print("it worked: method 2")
 
 print(f"L'inverse de la matrice: \n {J} \n est \n {np.linalg.inv(J)}")
 
-# REMARQUE: en pratique on utilisera jamais cette fonction!
+# REMARQUE: en pratique on n'utilisera jamais cette fonction!
 # En effet, on n'inverse **JAMAIS JAMAIS JAMAIS** une matrice,
 # sauf si l'on a une bonne raison de le faire.
 # La plupart du temps on doit résoudre un système lineaire Ax = b,
@@ -321,7 +321,7 @@ get_ipython().run_line_magic("matplotlib", "widget")
 
 # Gestion de la colorbar
 from pylab import cm  # noqa:E402
-
+from mpl_toolkits.mplot3d import Axes3D
 
 def f(x, y):
     return x ** 2 - y ** 4
