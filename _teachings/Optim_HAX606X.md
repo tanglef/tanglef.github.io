@@ -19,9 +19,19 @@ $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
 
 - sujet: [pdf]({{ site.url }}/_teachings/data/HAX606X_optim/tp2_sujet.pdf)
 
-## TP3: Descente de gradient et variantes
+## TP3: Gradient descent and coordinate descent
 
 - sujet: [pdf]({{ site.url }}/_teachings/data/HAX606X_optim/tp3_sujet.pdf)
 - widgets: [fonctions]({{ site.url }}/_teachings/data/HAX606X_optim/dico_math_functions.py) [widget_level_set]({{ site.url }}/_teachings/data/HAX606X_optim/widget_level_set.py)   [widget_convergence]({{ site.url }}/_teachings/data/HAX606X_optim/widget_convergence.py)
 
 It is necessary to have an up-to-date version of matplotlib to run the widgets. Numba and Ipython are also used.
+This is the corner stone of the course !!
+
+## TP4: Projected gradient descent and application
+
+- sujet: [pdf]({{ site.url }}/_teachings/data/HAX606X_optim/tp4_sujet.pdf)
+- widgets: [fonctions]({{ site.url }}/_teachings/data/HAX606X_optim/dico_math_functions.py) [widget_level_set]({{ site.url }}/_teachings/data/HAX606X_optim/widget_level_set.py)   [widget_convergence]({{ site.url }}/_teachings/data/HAX606X_optim/widget_convergence.py) (same as TP3, but still relevant!)
+- dataset: [iowa_alcohol]({{ site.url }}/_teachings/data/HAX606X_optim/datasets/Iowa_Liquor_tp.csv)
+- script with dataset: [alcohol_script]({{ site.url }}/_teachings/data/HAX606X_optim/script_season.py)
+
+The dataset available here is an already preprocessed and subdataset of the original `Iowa_Liquor` dataset (link in the `alcohol_script` file).
