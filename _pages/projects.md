@@ -66,7 +66,9 @@ internship:
 Master thesis internship on the Elastic-Net estimator for the linear model with interactions using GPU acceleration.
 Internship under the supervision of Benjamin Charlier and Joseph Salmon.
 Based on the thesis work of Florent Bascou.
-[Link to repo](https://github.com/tanglef/interactionsmodel)
+[Git Repo](https://github.com/tanglef/interactionsmodel)
+
+[PDF report]({{ site.url }}/_data/communication/report_master.pdf)
 
  {% include feature_row id="internship" %}
 
