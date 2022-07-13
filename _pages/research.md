@@ -24,6 +24,8 @@ Numerical validation is at the core of machine learning research as it allows to
 
 # Talks
 
+- July 2022: [*GDR MaDICS*](https://www.madics.fr/event/symposium-madics-4/) "Gongshow" and poster session at Quatrième édition du Symposium MaDICS - Univ. Lyon
+
 - <details><summary>
 June 2022: <i>Crowdsourcing label noise simulation on image classification tasks </i> at Journées des Statistiques de France (JDS) 2022 Univ. Lyon.</summary> <b> Abstract: </b>
 It is common to collect labelled datasets using crowdsourcing.
@@ -37,6 +39,8 @@ workers that do not provide any information on the true label against poorly per
 \[[slides]({{ site.url }}/_data/communication/beamer_jds_tlefort.pdf)\]
 
 - June 2022: <i>Workshop: How to create a professional and personal website easily </i> at SemDoc (PhD seminar) - Univ. Montpellier IMAG
+
+- April 2022: [*Statlearn*](https://www.sfds.asso.fr/fr/group/activites_et_parrainages/activites_de_la_sfds/569-statlearn/) *Springschool* workshop on upcoming trends in statistical learning, poster session - Cargèse Corsica
 
 - <details><summary>
 November 29 2021: <i>High dimensional optimization for penalized linear models with interactions using graphics card computational power</i>, at Probability and statistics (EPS) team seminar - Univ. Montpellier IMAG (content from my master's thesis internship)</summary> <b>Abstract:</b>
