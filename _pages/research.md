@@ -16,6 +16,13 @@ classes: wide
 # Publications
 
 - <details><summary>
+October 2022: <i>Improve learning combining crowdsourced labels by weighting Areas Under the Margin</i>
+by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href=""> A. Joly and <a href="http://josephsalmon.eu/">J. Salmon </a> a</summary>
+<b> Abstract: </b>
+     In supervised learning -- for instance in image classification -- modern massive datasets are commonly labeled by a crowd of workers. The obtained labels in this crowdsourcing setting are then aggregated for training. The aggregation step generally leverages a per worker trust score. Yet, such worker-centric approaches discard each task ambiguity. Some intrinsically ambiguous tasks might even fool expert workers, which could eventually be harmful for the learning step. In a standard supervised learning setting -- with one label per task and balanced classes -- the Area Under the Margin (AUM) statistic is tailored to identify mislabeled data. We adapt the AUM to identify ambiguous tasks in crowdsourced learning scenarios, introducing the Weighted AUM (WAUM). The WAUM is an average of AUMs weighted by worker and task dependent scores. We show that the WAUM can help discarding ambiguous tasks from the training set, leading to better generalization or calibration performance. We report improvements with respect to feature-blind aggregation strategies both for simulated settings and for the CIFAR-10H crowdsourced dataset. </details>
+\[[ArXiv](https://arxiv.org/abs/2209.15380)\] \[[BibTeX](https://scholar.googleusercontent.com/scholar.bib?q=info:xTwJZNKbKjUJ:scholar.google.com/&output=citation&scisdr=CgUjWBOaEJySkd1OyHI:AAGBfm0AAAAAY01I0HKMg-Q1pX9IxWk-mmiXs8MQquYq&scisig=AAGBfm0AAAAAY01I0Dpm_aKLUPI27_zeRTnHzU0ZfoCc&scisf=4&ct=citation&cd=-1&hl=fr)\]\[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
+
+- <details><summary>
 June 2022: <i>Benchopt: Reproducible, efficient and collaborative optimization benchmarks</i>
 by <a href="https://tommoral.github.io/about.html">T. Moreau </a>,  <a href="https://mathurinm.github.io/">M. Massias </a>, <a href="http://alexandre.gramfort.net/">A. Gramfort </a>, <a href="https://pierreablin.com/">P. Ablin </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>,  <a href="https://twitter.com/el_pa_b">P.-A. Bannier </a>,  <a href="https://deepai.org/profile/mathieu-dagreou"> M. Dagréou </a>, <a href="https://tomdlt.github.io/#about_me">T. Dupré la Tour</a>, <a href="https://gdurif.perso.math.cnrs.fr/">G. Durif </a>, <a href="https://cassiofragadantas.github.io/">C. F. Dantas </a>, <a href="https://klopfe.github.io/">Q. Klopfenstein </a>, <a href="https://larssonjohan.com/">J. Larsson </a>, E. Lai, <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj60YnA0Nz4AhVG0RoKHeXaDxoQFnoECAsQAQ&url=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fbenoit-malezieux-203283148&usg=AOvVaw38uDhnW-gQfAo8_Xfi3fm1">B. Malézieux </a>, <a href="https://t.co/Z0XdSWDuBp">B. Moufad </a>, <a href="https://tbng.github.io/">T. B. Nguyen </a>, <a href="https://twitter.com/rakotal1">A. Rakotomamonjy </a>, <a href="https://zaccharieramzi.fr/">Z. Ramzi </a>, <a href="http://josephsalmon.eu/">J. Salmon </a> and <a href="http://samuelvaiter.com/"> S. Vaiter </a></summary>
 <b> Abstract: </b>
@@ -23,6 +30,8 @@ Numerical validation is at the core of machine learning research as it allows to
 \[[ArXiv](https://arxiv.org/pdf/2206.13424.pdf)\] \[[BibTeX](https://scholar.google.com/scholar_lookup?arxiv_id=2206.13424)\]\[[Benchopt](https://benchopt.github.io/)\]
 
 # Talks
+
+- October 2022: [*ML-MTP*](https://groupes.renater.fr/wiki/ml-mtp/index) *Improve learning combining crowdsourced labels by weighting Areas Under the Margin* \[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
 
 - July 2022: [*GDR MaDICS*](https://www.madics.fr/event/symposium-madics-4/) "Gongshow" and poster session at Quatrième édition du Symposium MaDICS - Univ. Lyon
 
