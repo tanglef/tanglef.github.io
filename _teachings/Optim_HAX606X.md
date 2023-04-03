@@ -36,6 +36,10 @@ $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
   <li> Fichiers widgets: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/dico_math_functions.py">[fonctions]</a> <a href="{{ site.url }}/_teachings/data/HAX606X_optim/widget_level_set.py">[widget_level_set]</a>   <a href="{{ site.url }}/_teachings/data/HAX606X_optim/widget_convergence.py">[widget_convergence]</a></li>
 </ul>
 
+<h2> TP4: Descente de gradient projeté</h2>
+<ul>
+<li> sujet: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/tp3_quarto.html">[sujet descente de gradient projeté]</a> </li>
+</ul>
 
 # 2021-2022
 
