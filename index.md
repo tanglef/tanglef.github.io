@@ -10,10 +10,9 @@ I'm currently a PhD student in Statistics in Montpellier, France.
 
 I am under the supervision of [Joseph Salmon](http://josephsalmon.eu/), [Benjamin Charlier](https://imag.umontpellier.fr/~charlier/index.php?page=index) and [Alexis Joly](http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php) at Institut Montpelliérain Alexander Grothendieck (IMAG - University of Montpellier) and the INRIA Montpellier.
 
-You can contact me at any of the following:
+You can contact me at:
 
 * [tanguy.lefort@umontpellier.fr](mailto:tanguy.lefort@umontpellier.fr)
-* [tanguy_l@outlook.fr](mailto:tanguy_l@outlook.fr)
 
 ## Research interests
 
