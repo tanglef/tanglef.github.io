@@ -31,6 +31,8 @@ Numerical validation is at the core of machine learning research as it allows to
 
 # Talks
 
+- February 2023: [*ML-MTP*](https://groupes.renater.fr/wiki/ml-mtp/index) *Learning from crowds: going beyond aggregation schemes* Univ. Montpellier IMAG [slides](https://groupes.renater.fr/wiki/ml-mtp/_media/wiki/beamer.pdf)
+
 - October 2022: [*ML-MTP*](https://groupes.renater.fr/wiki/ml-mtp/index) *Improve learning combining crowdsourced labels by weighting Areas Under the Margin* Univ. Montpellier IMAG \[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
 
 - July 2022: [*GDR MaDICS*](https://www.madics.fr/event/symposium-madics-4/) "Gongshow" and poster session at Quatrième édition du Symposium MaDICS - Univ. Lyon
