@@ -16,6 +16,13 @@ classes: wide
 # Publications
 
 - <details><summary>
+September 2023: <i>Peerannot: classification for crowdsourced image datasets with Python</i>
+by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
+<b> Abstract: </b>
+Crowdsourcing is a quick and easy way to collect labels for large datasets, involving many workers. However, workers often disagree with each other. Sources of error can arise from the workers’ skills, but also from the intrinsic difficulty of the task. We present peerannot: a Python library for managing and learning from crowdsourced labels for classification. Our library allows users to aggregate labels from common noise models or train a deep learning-based classifier directly from crowdsourced labels. In addition, we provide an identification module to easily explore the task difficulty of datasets and worker capabilities. </details>
+Under Review \[[Preprint](https://tanglef.github.io/computo_2023/)\] \[[peerannot library doc](https://peerannot.github.io/)\] \[[peerannot github](https://github.com/peerannot/peerannot)\]
+
+- <details><summary>
 October 2022: <i>Identify ambiguous tasks combining crowdsourced labels by weighting Areas Under the Margin</i>
 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
 <b> Abstract: </b>
@@ -30,6 +37,12 @@ Numerical validation is at the core of machine learning research as it allows to
 \[[ArXiv](https://arxiv.org/pdf/2206.13424.pdf)\] \[[BibTeX](https://scholar.google.com/scholar_lookup?arxiv_id=2206.13424)\]\[[Benchopt](https://benchopt.github.io/)\]
 
 # Talks
+
+- <details><summary>
+September 2023: <i>Data collection from a crowd: where is the noise coming from? </i>PhD students seminar, IMAG, Univ. Montpellier.</summary> <b> Abstract: </b>
+Citizen science can increase public engagement, improve our knowledge and help models perform better. Keeping humans in the loop is a way to obtain more data, faster, at a lesser cost than if we asked experts all the time. However, citizen science often comes with an issue: we collect noisy data from a crowd of workers. For example, in image classification, what can we do when workers disagree on the label of a given image? If there is no consensus, who is at fault? Is the mistake coming from the workers’ abilities or is the image simply not clear enough to be labeled? In this talk, we present different ways to learn from crowdsourced data. In particular, we look back to how datasets were created and how label ambiguities can naturally happen along the way.
+</details>
+\[[slides]({{ site.url }}/_data/communication/beamer_semdoc_2023.pdf)\]\[[peerannot library doc](https://peerannot.github.io/)\] \[[peerannot github](https://github.com/peerannot/peerannot)\]
 
 - February 2023: [*ML-MTP*](https://groupes.renater.fr/wiki/ml-mtp/index) *Learning from crowds: going beyond aggregation schemes* Univ. Montpellier IMAG [slides](https://groupes.renater.fr/wiki/ml-mtp/_media/wiki/beamer.pdf)
 
