@@ -39,6 +39,13 @@ Numerical validation is at the core of machine learning research as it allows to
 # Talks
 
 - <details><summary>
+October 2023: <i> ChatGPT & co, Mythes and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i>Séminaire culture générale, with Francois David Collin IMAG<summary> <b> Abstract: </b>
+Many of us have seen the strong impact of so-called Deep Learning technologies for some time now.
+This is particularly true of their "generative" side, with Large Language Models (LLMs) such as ChatGPT, GPT-4, etc., whose use has become widespread in higher education, inviting teaching staff to question these tools, from their creation to their use.
+Here, we offer an overview of Deep Learning, taking a look at what data-driven learning is, and introducing the flagship of these new technologies: LLMs, their development and uses. </details>
+\[[slides](https://francoisdavid.collin.pages.math.cnrs.fr/chatgpt-imag-talk/#/title-slide)\]\[[code](https://plmlab.math.cnrs.fr/francoisdavid.collin/chatgpt-imag-talk)\]\]
+
+- <details><summary>
 September 2023: <i>Data collection from a crowd: where is the noise coming from? </i>PhD students seminar, IMAG, Univ. Montpellier.</summary> <b> Abstract: </b>
 Citizen science can increase public engagement, improve our knowledge and help models perform better. Keeping humans in the loop is a way to obtain more data, faster, at a lesser cost than if we asked experts all the time. However, citizen science often comes with an issue: we collect noisy data from a crowd of workers. For example, in image classification, what can we do when workers disagree on the label of a given image? If there is no consensus, who is at fault? Is the mistake coming from the workers’ abilities or is the image simply not clear enough to be labeled? In this talk, we present different ways to learn from crowdsourced data. In particular, we look back to how datasets were created and how label ambiguities can naturally happen along the way. </details>
 \[[slides]({{ site.url }}/_data/communication/beamer_semdoc_2023.pdf)\]\[[peerannot library doc](https://peerannot.github.io/)\] \[[peerannot github](https://github.com/peerannot/peerannot)\]
