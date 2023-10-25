@@ -43,7 +43,7 @@ October 2023: <i> ChatGPT & co, Mythes and Reality. Everything you wanted to a
 Many of us have seen the strong impact of so-called Deep Learning technologies for some time now.
 This is particularly true of their "generative" side, with Large Language Models (LLMs) such as ChatGPT, GPT-4, etc., whose use has become widespread in higher education, inviting teaching staff to question these tools, from their creation to their use.
 Here, we offer an overview of Deep Learning, taking a look at what data-driven learning is, and introducing the flagship of these new technologies: LLMs, their development and uses. </details>
-\[[slides](https://francoisdavid.collin.pages.math.cnrs.fr/chatgpt-imag-talk/#/title-slide)\]\[[code](https://plmlab.math.cnrs.fr/francoisdavid.collin/chatgpt-imag-talk)\]\]
+\[[slides](https://francoisdavid.collin.pages.math.cnrs.fr/chatgpt-imag-talk/#/title-slide)\]\[[code](https://plmlab.math.cnrs.fr/francoisdavid.collin/chatgpt-imag-talk)\]
 
 - <details><summary>
 September 2023: <i>Data collection from a crowd: where is the noise coming from? </i>PhD students seminar, IMAG, Univ. Montpellier.</summary> <b> Abstract: </b>
