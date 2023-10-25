@@ -39,7 +39,7 @@ Numerical validation is at the core of machine learning research as it allows to
 # Talks
 
 - <details><summary>
-October 2023: <i> ChatGPT & co, Mythes and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i>Séminaire culture générale, with Francois David Collin IMAG<summary> <b> Abstract: </b>
+October 2023: <i> ChatGPT & co, Mythes and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i>Séminaire culture générale, with Francois David Collin IMAG</summary> <b> Abstract: </b>
 Many of us have seen the strong impact of so-called Deep Learning technologies for some time now.
 This is particularly true of their "generative" side, with Large Language Models (LLMs) such as ChatGPT, GPT-4, etc., whose use has become widespread in higher education, inviting teaching staff to question these tools, from their creation to their use.
 Here, we offer an overview of Deep Learning, taking a look at what data-driven learning is, and introducing the flagship of these new technologies: LLMs, their development and uses. </details>
