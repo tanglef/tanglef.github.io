@@ -102,17 +102,24 @@ Citizen science can increase public engagement, improve our knowledge and help m
 
 - July 2022: [*GDR MaDICS*](https://www.madics.fr/event/symposium-madics-4/) "Gongshow" and poster session at Quatrième édition du Symposium MaDICS - Univ. Lyon
 
-- <details><summary>
-June 2022: <i>Crowdsourcing label noise simulation on image classification tasks </i> at Journées des Statistiques de France (JDS) 2022 Univ. Lyon.</summary> <b> Abstract: </b>
-It is common to collect labelled datasets using crowdsourcing.
-Yet, labels quality depends deeply on the task difficulty and on the workers abilities.
-With such datasets, the lack of ground truth makes it hard to assess the quality of annotations.
-There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers answers before the aggregation.
-We propose a new crowdsourcing simulation framework with quality control.
-This allows us to evaluate different empirical learning strategies empirically from the obtained labels.
-Our goal is to separate different sources of noise:
-workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.</details>
-\[[slides]({{ site.url }}/_data/communication/beamer_jds_tlefort.pdf)\]
+<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
+  <ul>
+    <li>
+      <details>
+        <summary>
+          <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto;">
+          June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i> at Journées des Statistiques de France (JDS) 2022 Univ. Lyon.
+        </summary>
+        <b>Abstract:</b>
+        It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
+      </details>
+      <p>
+        [<a href="{{ site.url }}/_data/communication/beamer_jds_tlefort.pdf">slides</a>]
+      </p>
+    </li>
+  </ul>
+</div>
+
 
 - June 2022: <i>Workshop: How to create a professional and personal website easily </i> at SemDoc (PhD seminar) - Univ. Montpellier IMAG
 
