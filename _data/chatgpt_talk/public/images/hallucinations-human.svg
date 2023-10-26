@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="hallucinations-human.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#000000"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.48567463"
+     inkscape:cx="374.73648"
+     inkscape:cy="280.02286"
+     inkscape:window-width="1280"
+     inkscape:window-height="730"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer5"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch1"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="0"
+         id="stop1" />
+    </linearGradient>
+    <linearGradient
+       id="swatch12"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#fffff5;stop-opacity:0.98298675;"
+         offset="0"
+         id="stop12" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#bd2f4f;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+      <stop
+         style="stop-color:#3a2fbd;stop-opacity:0;"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3"
+       id="radialGradient4"
+       cx="13.327669"
+       cy="58.571648"
+       fx="13.327669"
+       fy="58.571648"
+       r="88.077982"
+       gradientTransform="matrix(0,1.1911632,1.0290447,0,5.4460639,39.229847)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Truth"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <ellipse
+       style="opacity:0.780702;fill:#d7d913;fill-opacity:0.697947;stroke:#8d8d8d;stroke-width:0.515001;stroke-linecap:round;stroke-linejoin:round"
+       id="path4"
+       cx="90.9105"
+       cy="122.88326"
+       rx="50.07782"
+       ry="40.447472" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';white-space:pre;inline-size:20.1281;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="16.949417"
+       y="130.58754"
+       id="text4"
+       transform="translate(-11.440272,-0.81716231)"><tspan
+         x="16.949417"
+         y="130.58754"
+         id="tspan2">Truth</tspan></text>
+    <rect
+       style="opacity:0.780702;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.515001;stroke-linecap:round;stroke-linejoin:round"
+       id="rect23"
+       width="21.110025"
+       height="7.0820675"
+       x="15.798471"
+       y="125.29822"
+       ry="3.5410337" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 90.9105,122.88326 0,0"
+       id="path23"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path4" />
+    <rect
+       style="opacity:0.780702;fill:#d7da12;fill-opacity:0.545098;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect27"
+       width="24.787256"
+       height="9.2611723"
+       x="3.2686493"
+       y="123.11911"
+       ry="3.2686491" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Likelihood"
+     style="display:inline">
+    <ellipse
+       style="opacity:0.780702;fill:#3a2fbd;fill-opacity:0.697947;stroke:#8d8d8d;stroke-width:0.515001;stroke-linecap:round;stroke-linejoin:round"
+       id="path2"
+       cx="109.40078"
+       cy="118.2607"
+       rx="33.513618"
+       ry="53.929958" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="96.151955"
+       y="188.56461"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="96.151955"
+         y="188.56461">Likelihood</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="43.914394"
+       y="130.20233"
+       id="text9"><tspan
+         sodipodi:role="line"
+         id="tspan9"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="43.914394"
+         y="130.20233">Outliers</tspan></text>
+    <rect
+       style="opacity:0.780702;fill:#392ebd;fill-opacity:0.545098;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28"
+       width="45.488701"
+       height="9.8059483"
+       x="92.884125"
+       y="181.68242"
+       ry="3.2686491" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Common"
+     style="display:inline">
+    <ellipse
+       style="opacity:0.780702;fill:#28c45e;fill-opacity:0.697947;stroke:#8d8d8d;stroke-width:0.515001;stroke-linecap:round;stroke-linejoin:round"
+       id="path1"
+       cx="105.74125"
+       cy="102.0817"
+       rx="42.951363"
+       ry="25.809338" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="159.58009"
+       y="107.18298"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="159.58009"
+         y="107.18298">Common sense</tspan></text>
+    <rect
+       style="opacity:0.780702;fill:#28c45e;fill-opacity:0.545098;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect29"
+       width="52.025997"
+       height="9.5335598"
+       x="156.62277"
+       y="100.51096"
+       ry="3.2686491" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Generated"
+     style="display:inline">
+    <path
+       style="display:inline;fill:url(#radialGradient4);stroke:#000000;stroke-width:0.310662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 156.20352,-49.787593 C 126.77769,161.28468 127.22354,159.90813 127.22354,159.90813 L -24.809962,6.1924466 v 0"
+       id="path3" />
+    <rect
+       style="display:inline;opacity:0.780702;fill:#672f98;fill-opacity:0.341176;fill-rule:evenodd;stroke:#000000;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect30"
+       width="40.858116"
+       height="9.5335598"
+       x="159.61903"
+       y="34.048431"
+       ry="3.2686491" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="162.65048"
+       y="40.607025"
+       id="text7"><tspan
+         sodipodi:role="line"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="162.65048"
+         y="40.607025"
+         id="tspan10">Generated</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Hallucinations"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;line-height:1.25;font-family:Century;-inkscape-font-specification:'Century, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;mix-blend-mode:darken;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.365;stroke-linecap:butt;stroke-dasharray:4.38, 4.38;stroke-dashoffset:0;stroke-opacity:1"
+       x="44.725456"
+       y="85.514938"
+       id="text8"
+       transform="rotate(-9.2800108)"
+       inkscape:transform-center-x="-8.4440106"
+       inkscape:transform-center-y="-3.5410367"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:Century;-inkscape-font-specification:'Century, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.365;stroke-linecap:butt;stroke-dasharray:4.38, 4.38;stroke-dashoffset:0;stroke-opacity:1"
+         x="44.725456"
+         y="85.514938">Hallucinations</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Human"
+     style="display:inline">
+    <path
+       id="path5"
+       style="display:inline;fill:url(#radialGradient4);stroke:#000000;stroke-width:0.310662px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 146.46444,20.416325 41.530282,73.266329 127.22376,159.90807 c 0,0 3.75865,-27.98361 19.24068,-139.491745 z" />
+    <text
+       xml:space="preserve"
+       style="font-size:6.35px;line-height:1.25;font-family:'Fira Code';-inkscape-font-specification:'Fira Code';display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+       x="26.104475"
+       y="68.323418"
+       id="text12"
+       transform="rotate(-25.720224)"><tspan
+         sodipodi:role="line"
+         id="tspan12"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
+         x="26.104475"
+         y="68.323418">Human correction</tspan></text>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#text7"
+       id="use5"
+       style="display:inline" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#rect30"
+       id="use6"
+       style="display:inline" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#text8"
+       inkscape:transform-center-x="-8.4440106"
+       inkscape:transform-center-y="-3.5410367"
+       id="use7"
+       style="display:inline;mix-blend-mode:luminosity;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-opacity:1" />
+  </g>
+</svg>

@@ -1,0 +1,53 @@
+direction: right
+
+Inputs 
+Inputs Embedding
+Inputs -> Inputs Embedding -> add1
+positional-encoding1 -> add1
+
+Encoder: {
+
+    First sub-layer: {
+        Multi-Head Attention -> add-norm
+        add-norm:"Add & Norm"
+    }
+
+    Second sub-layer: {
+        Feed Forward -> add-norm
+        add-norm:"Add & Norm"
+    }
+
+    
+    First sub-layer.add-norm -> Second sub-layer.Feed Forward
+    First sub-layer.add-norm -> Second sub-layer.add-norm
+
+
+}
+
+add1 -- Encoder.First sub-layer.Multi-Head Attention
+add1 -> Encoder.First sub-layer.add-norm
+
+
+positional-encoding*: "Positional Encoding" {
+    style: {
+        stroke: "transparent"
+    }
+}
+
+
+add*: "+" {
+    shape: circle
+    width: 1
+    style: {
+        font-size: 40
+        bold: true
+    } 
+}
+
+*.branch*: "" {
+    width: 0
+    style: {
+        stroke: "transparent"
+    }
+
+}
