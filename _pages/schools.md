@@ -1,6 +1,7 @@
 ---
 title: "Small CV"
 permalink: /cv/
+classes: wide
 ---
 
 ## The road so far...
