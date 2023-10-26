@@ -19,7 +19,7 @@ classes: wide
 <ul>
 <li><details>
 <summary>
-  <img src="{{ site.url }}/_data/images/pipeline_peerannot.png" alt="Benchopt logo" style="max-width: 100px; height: auto;">
+  <img src="{{ site.url }}/_data/images/pipeline_peerannot.png" alt="Benchopt logo" style="max-width: 100px; height: auto; float: left;">
 September 2023: <i>Peerannot: classification for crowdsourced image datasets with Python</i>
 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
 <b> Abstract: </b>
@@ -45,7 +45,7 @@ by <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.um
 <ul>
 <li><details>
 <summary>
-  <img src="{{ site.url }}/_data/images/logo_benchopt.png" alt="Benchopt logo" style="max-width: 100px; height: auto;">
+  <img src="{{ site.url }}/_data/images/logo_benchopt.png" alt="Benchopt logo" style="max-width: 100px; height: auto; float: left;">
 June 2022: <i>Benchopt: Reproducible, efficient and collaborative optimization benchmarks</i>, NeurIPS 2022 by <a href="https://tommoral.github.io/about.html">T. Moreau </a>,  <a href="https://mathurinm.github.io/">M. Massias </a>, <a href="http://alexandre.gramfort.net/">A. Gramfort </a>, <a href="https://pierreablin.com/">P. Ablin </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>,  <a href="https://twitter.com/el_pa_b">P.-A. Bannier </a>,  <a href="https://deepai.org/profile/mathieu-dagreou"> M. Dagréou </a>, <a href="https://tomdlt.github.io/#about_me">T. Dupré la Tour</a>, <a href="https://gdurif.perso.math.cnrs.fr/">G. Durif </a>, <a href="https://cassiofragadantas.github.io/">C. F. Dantas </a>, <a href="https://klopfe.github.io/">Q. Klopfenstein </a>, <a href="https://larssonjohan.com/">J. Larsson </a>, E. Lai, <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj60YnA0Nz4AhVG0RoKHeXaDxoQFnoECAsQAQ&url=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fbenoit-malezieux-203283148&usg=AOvVaw38uDhnW-gQfAo8_Xfi3fm1">B. Malézieux </a>, <a href="https://t.co/Z0XdSWDuBp">B. Moufad </a>, <a href="https://tbng.github.io/">T. B. Nguyen </a>, <a href="https://twitter.com/rakotal1">A. Rakotomamonjy </a>, <a href="https://zaccharieramzi.fr/">Z. Ramzi </a>, <a href="http://josephsalmon.eu/">J. Salmon </a> and <a href="http://samuelvaiter.com/"> S. Vaiter </a></summary>
 <b> Abstract: </b>
 Numerical validation is at the core of machine learning research as it allows to assess the actual impact of new methods, and to confirm the agreement between theory and practice. Yet, the rapid development of the field poses several challenges: researchers are confronted with a profusion of methods to compare, limited transparency and consensus on best practices, as well as tedious re-implementation work. As a result, validation is often very partial, which can lead to wrong conclusions that slow down the progress of research. We propose Benchopt, a collaborative framework to automate, reproduce and publish optimization benchmarks in machine learning across programming languages and hardware architectures. Benchopt simplifies benchmarking for the community by providing an off-the-shelf tool for running, sharing and extending experiments. To demonstrate its broad usability, we showcase benchmarks on three standard learning tasks: l2-regularized logistic regression, Lasso, and ResNet18 training for image classification.These benchmarks highlight key practical findings that give a more nuanced view of the state-of-the-art fort hese problems, showing that for practical evaluation, the devil is in the details. We hope that Benchopt will foster collaborative work in the community hence improving the reproducibility of research findings. </details></li>
@@ -64,7 +64,7 @@ Numerical validation is at the core of machine learning research as it allows to
     <li>
       <details>
         <summary>
-          <img src="{{ site.url }}/_data/images/chat_gpt_talk.png" alt="ChatGPT talk" style="max-width: 100px; height: auto;">
+          <img src="{{ site.url }}/_data/images/chat_gpt_talk.png" alt="ChatGPT talk" style="max-width: 100px; height: auto; float: left;">
           October 2023: <i>ChatGPT & co, Myths and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i> Séminaire culture générale, with Francois David Collin IMAG
         </summary>
         <b>Abstract:</b>
@@ -89,8 +89,8 @@ Citizen science can increase public engagement, improve our knowledge and help m
 <div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
   <ul>
     <li>
-      <img src="{{ site.url }}/_data/images/conal.png" alt="conal" style="max-width: 100px; height: auto;">
-      February 2023: <a href="https://groupes.renater.fr/wiki/ml-mtp/index"><i>ML-MTP</i></a> *Learning from crowds: going beyond aggregation schemes* Univ. Montpellier IMAG
+      <img src="{{ site.url }}/_data/images/conal.png" alt="conal" style="max-width: 100px; height: auto; float: left;">
+      February 2023: <a href="https://groupes.renater.fr/wiki/ml-mtp/index"><i>ML-MTP</i></a> <i>Learning from crowds: going beyond aggregation schemes</i> Univ. Montpellier IMAG
       <p>
         [<a href="https://groupes.renater.fr/wiki/ml-mtp/_media/wiki/beamer.pdf">slides</a>]
       </p>
@@ -107,7 +107,7 @@ Citizen science can increase public engagement, improve our knowledge and help m
     <li>
       <details>
         <summary>
-          <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto;">
+          <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto; float: left;">
           June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i> at Journées des Statistiques de France (JDS) 2022 Univ. Lyon.
         </summary>
         <b>Abstract:</b>
@@ -141,7 +141,7 @@ Those are known to be more computationally demanding in order of magnitude, but 
 <div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
   <ul>
     <li>
-      <img src="{{ site.url }}/_data/images/ridge_dd.png" alt="double desent ridge" style="max-width: 100px; height: auto;">
+      <img src="{{ site.url }}/_data/images/ridge_dd.png" alt="double desent ridge" style="max-width: 100px; height: auto; float: left;">
       April 29, 2021: Paper club <i>Ridge Regularization: an Essential Concept in Data Science by Trevor Hastie</i> with <a href="https://bascouflorent.github.io/">Florent Bascou</a> at ML-MTP seminar - Univ. Montpellier IMAG
       <p>
         [<a href="https://arxiv.org/pdf/2006.00371.pdf">paper</a>]
