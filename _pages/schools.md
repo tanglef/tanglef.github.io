@@ -14,5 +14,5 @@ classes: wide
 
 ## Full-CV (last update 02-2022)
 
-* English version [CV]({{ site.url }}/_data/CV_en.pdf)
+* English version [CV]({{ site.url }}/_data/Academic_CV_lefort.pdf)
 
