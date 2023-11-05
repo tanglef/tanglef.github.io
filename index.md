@@ -4,6 +4,11 @@ title: ""
 author_profile: true
 ---
 
+## Next position
+
+Actively looking for a postdoctoral position in applied Machine Learning and computer science beginning 10-2024.
+
+
 ## General
 
 I'm currently a PhD student in Statistics in Montpellier, France.
