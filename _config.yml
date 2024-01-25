@@ -128,10 +128,6 @@ author:
   weibo            :
   xing             :
   youtube          : # maybe...
-  links:
-    - label: "Reddit"
-      icon: "fab fa-fw fa-reddit"
-      url: "https://www.reddit.com/user/tanglef"
 
 
 # Site
