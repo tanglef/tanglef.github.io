@@ -22,8 +22,6 @@ $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
 <li> sujet: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/tp0_quarto.html">[installation]</a> </li>
 </ul>
 
-
-
 <h2> TP1: Introduction to Python </h2>
 <ul>
 <li> sujet: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/tp1_quarto.html">[prise en main]</a> </li>
