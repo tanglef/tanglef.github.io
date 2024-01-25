@@ -1,0 +1,25 @@
+author: "Joseph Salmon, Tanguy Lefort, Amélie Vernay"
+toc: true
+lang: fr
+reference-location: margin
+citation-location: margin
+fig-cap-location: margin
+format:
+  html:
+    mainfont: Atkinson Hyperlegible
+    html-math-method: katex
+    toc-location: left
+    toc-depth: 6
+    code-fold: false
+    code-tools:
+      toggle: false
+      source: false
+    self-contained: true
+    page-layout: article
+    code-overflow: wrap
+    fig-responsive: true
+    fig-format: svg
+execute:
+  warning: false
+  error: true
+jupyter: python3
