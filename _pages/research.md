@@ -7,7 +7,10 @@ header:
   overlay_filter: "0.5"
 intro:
   - excerpt: "Scientific communication: including talks, (pre)-publications, code and slides when available. *In fine* the serious page."
-
+toc: true
+toc_sticky: true
+toc_label: "Contents"
+toc_icon: "swatchbook"
 classes: wide
 ---
 
@@ -15,12 +18,13 @@ classes: wide
 
 # Publications
 
-<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block;background-color:rgba(128, 128, 128, .1);">
+## Journals
+
 <ul>
 <li><details>
 <summary>
-  <img src="{{ site.url }}/_data/images/pipeline_peerannot.png" alt="Benchopt logo" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-September 2023: <i>Peerannot: classification for crowdsourced image datasets with Python</i>
+  <img src="{{ site.url }}/_data/images/pipeline_peerannot.png" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+2023 (Under review): <i>Peerannot: classification for crowdsourced image datasets with Python</i>
 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
 <b> Abstract: </b>
 Crowdsourcing is a quick and easy way to collect labels for large datasets, involving many workers. However, workers often disagree with each other. Sources of error can arise from the workers’ skills, but also from the intrinsic difficulty of the task. We present peerannot: a Python library for managing and learning from crowdsourced labels for classification. Our library allows users to aggregate labels from common noise models or train a deep learning-based classifier directly from crowdsourced labels. In addition, we provide an identification module to easily explore the task difficulty of datasets and worker capabilities. </details>
@@ -31,17 +35,19 @@ Crowdsourcing is a quick and easy way to collect labels for large datasets, invo
   [<a href="https://github.com/peerannot/peerannot">peerannot github</a>]
 </p>
 </ul>
-</div>
 
 - <details><summary>
-October 2022: <i>Identify ambiguous tasks combining crowdsourced labels by weighting Areas Under the Margin</i>
+2023 (Under review): <i>Identify ambiguous tasks combining crowdsourced labels by weighting Areas Under the Margin</i>
 by <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
 <b> Abstract: </b>
      In supervised learning - for instance in image classification - modern massive datasets are commonly labeled by a crowd of workers. The obtained labels in this crowdsourcing setting are then aggregated for training. The aggregation step generally leverages a per-worker trust score. Yet, such worker-centric approaches discard each task's ambiguity. Some intrinsically ambiguous tasks might even fool expert workers, which could eventually be harmful to the learning step. In a standard supervised learning setting - with one label per task - the Area Under the Margin (AUM) is tailored to identify mislabeled data. We adapt the AUM to identify ambiguous tasks in crowdsourced learning scenarios, introducing the Weighted AUM (WAUM). The WAUM is an average of AUMs weighted by task-dependent scores. We show that the WAUM can help discard ambiguous tasks from the training set, leading to better generalization or calibration performance. We report improvements over existing strategies for learning a crowd, both for simulated settings and for the CIFAR-10H, LabelMe and Music crowdsourced datasets. </details>
 \[[ArXiv](https://arxiv.org/abs/2209.15380)\]\[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
 
 
-<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block;background-color:rgba(128, 128, 128, .1);">
+## In Proceedings of Conferences
+
+### International Conferences
+
 <ul>
 <li><details>
 <summary>
@@ -55,11 +61,41 @@ Numerical validation is at the core of machine learning research as it allows to
   [<a href="https://benchopt.github.io/">Benchopt</a>]
 </p>
 </ul>
-</div>
+
+### National Conferences
+
+  <ul>
+    <li>
+      <details>
+        <summary>
+          July 2023: <i>Weighting areas under the margin in crowdsourced datasets</i>, JDS 2023 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
+        </summary>
+        <b>Abstract:</b>
+In supervised learning — for instance in image classification — modern massive datasets are commonly labeled by a crowd of workers. Labeling errors can happen because of the workers abilities or tasks identification difficulty. Some intrinsically ambiguous tasks might fool expert workers, which could eventually be harmful to the learning step. In a standard supervised learning setting — with one label per task — the Area Under the Margin (AUM) is tailored to identify mislabeled data. We adapt the AUM to identify ambiguous tasks in crowdsourced learning scenarios, introducing the Weighted AUM (WAUM). The WAUM is an average of AUMs weighted by task-dependent scores. We show that the WAUM can help discard ambiguous tasks from the training set, leading to better generalization or calibration performance.
+      </details>
+      <p>
+        [<a href="{{ site.url }}/_data/communication/papers/jds23.pdf">paper</a>]
+      </p>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <details>
+        <summary>
+          <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+          June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i>, JDS 2022 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
+        </summary>
+        <b>Abstract:</b>
+        It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
+      </details>
+      <p>
+        [<a href="{{ site.url }}/_data/communication/papers/jds2".pdf">paper</a>]
+      </p>
+    </li>
+  </ul>
 
 # Talks
 
-<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
   <ul>
     <li>
       <details>
@@ -76,7 +112,6 @@ Numerical validation is at the core of machine learning research as it allows to
       </p>
     </li>
   </ul>
-</div>
 
 
 - <details><summary>
@@ -86,7 +121,6 @@ Citizen science can increase public engagement, improve our knowledge and help m
 
 - July 2023: *Weighting areas under the margin in crowdsourced datasets* at [Journées des Statistiques de France (JDS) 2023](https://jds2023.sciencesconf.org/resource/page/id/19) Univ. Bruxelles.
 
-<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
   <ul>
     <li>
       <img src="{{ site.url }}/_data/images/conal.png" alt="conal" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
@@ -96,13 +130,11 @@ Citizen science can increase public engagement, improve our knowledge and help m
       </p>
     </li>
   </ul>
-</div>
 
 - October 2022: [*ML-MTP*](https://groupes.renater.fr/wiki/ml-mtp/index) *Improve learning combining crowdsourced labels by weighting Areas Under the Margin* Univ. Montpellier IMAG \[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
 
 - July 2022: [*GDR MaDICS*](https://www.madics.fr/event/symposium-madics-4/) "Gongshow" and poster session at Quatrième édition du Symposium MaDICS - Univ. Lyon
 
-<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
   <ul>
     <li>
       <details>
@@ -118,7 +150,6 @@ Citizen science can increase public engagement, improve our knowledge and help m
       </p>
     </li>
   </ul>
-</div>
 
 
 - June 2022: <i>Workshop: How to create a professional and personal website easily </i> at SemDoc (PhD seminar) - Univ. Montpellier IMAG
@@ -138,7 +169,6 @@ Those are known to be more computationally demanding in order of magnitude, but 
 - October 28 2021: *Introduction to neural network* with [Joseph Salmon](http://josephsalmon.eu/), at ML-MTP seminar - Univ. Montpellier IMAG. (session 0 for reading group on *Deep Learning: a statistical viewpoint*)<br>
 \[[slides]({{ site.url }}/_data/communication/tuto_deep.pdf)\] \[[code]({{ site.url }}/_data/communication/code_tuto_deep.zip)\]
 
-<div style="border: 3px solid #ccc; padding: 2px; margin: 3px; display: inline-block; background-color: rgba(128, 128, 128, .1);">
   <ul>
     <li>
       <img src="{{ site.url }}/_data/images/ridge_dd.png" alt="double desent ridge" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
@@ -149,4 +179,3 @@ Those are known to be more computationally demanding in order of magnitude, but 
       </p>
     </li>
   </ul>
-</div>

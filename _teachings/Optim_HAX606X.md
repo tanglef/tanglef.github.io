@@ -1,5 +1,5 @@
 ---
-title: HAX606X - Convex Optimization (2021-?)
+title: HAX606X - Convex Optimization (2021-2024)
 falling:
   - image_path: /_teachings/data/HAX606X_optim/falling.svg
     alt: "surface"
