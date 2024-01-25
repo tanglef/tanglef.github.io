@@ -30,7 +30,7 @@ by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.u
 Crowdsourcing is a quick and easy way to collect labels for large datasets, involving many workers. However, workers often disagree with each other. Sources of error can arise from the workers’ skills, but also from the intrinsic difficulty of the task. We present peerannot: a Python library for managing and learning from crowdsourced labels for classification. Our library allows users to aggregate labels from common noise models or train a deep learning-based classifier directly from crowdsourced labels. In addition, we provide an identification module to easily explore the task difficulty of datasets and worker capabilities. </details>
 </li>
 <p>
-  Under Review [<a href="https://tanglef.github.io/computo_2023/">Preprint</a>]
+  [<a href="https://tanglef.github.io/computo_2023/">Preprint</a>]
   [<a href="https://peerannot.github.io/">peerannot library doc</a>]
   [<a href="https://github.com/peerannot/peerannot">peerannot github</a>]
 </p>
@@ -64,54 +64,54 @@ Numerical validation is at the core of machine learning research as it allows to
 
 ### National Conferences
 
-  <ul>
-    <li>
-      <details>
-        <summary>
-          July 2023: <i>Weighting areas under the margin in crowdsourced datasets</i>, JDS 2023 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
-        </summary>
-        <b>Abstract:</b>
+<ul>
+  <li>
+    <details>
+      <summary>
+        July 2023: <i>Weighting areas under the margin in crowdsourced datasets</i>, JDS 2023 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
+      </summary>
+      <b>Abstract:</b>
 In supervised learning — for instance in image classification — modern massive datasets are commonly labeled by a crowd of workers. Labeling errors can happen because of the workers abilities or tasks identification difficulty. Some intrinsically ambiguous tasks might fool expert workers, which could eventually be harmful to the learning step. In a standard supervised learning setting — with one label per task — the Area Under the Margin (AUM) is tailored to identify mislabeled data. We adapt the AUM to identify ambiguous tasks in crowdsourced learning scenarios, introducing the Weighted AUM (WAUM). The WAUM is an average of AUMs weighted by task-dependent scores. We show that the WAUM can help discard ambiguous tasks from the training set, leading to better generalization or calibration performance.
-      </details>
-      <p>
-        [<a href="{{ site.url }}/_data/communication/papers/jds23.pdf">paper</a>]
-      </p>
-    </li>
-  </ul>
-  <ul>
-    <li>
-      <details>
-        <summary>
-          <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-          June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i>, JDS 2022 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
-        </summary>
-        <b>Abstract:</b>
-        It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
-      </details>
-      <p>
-        [<a href="{{ site.url }}/_data/communication/papers/jds2".pdf">paper</a>]
-      </p>
-    </li>
-  </ul>
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/communication/papers/jds23.pdf">paper</a>]
+    </p>
+  </li>
+</ul>
+<ul>
+  <li>
+    <details>
+      <summary>
+        <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+        June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i>, JDS 2022 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
+      </summary>
+      <b>Abstract:</b>
+      It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/communication/papers/jds22.pdf">paper</a>]
+    </p>
+  </li>
+</ul>
 
 # Talks
 
-  <ul>
-    <li>
-      <details>
-        <summary>
-          <img src="{{ site.url }}/_data/images/chat_gpt_talk.png" alt="ChatGPT talk" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-          October 2023: <i>ChatGPT & co, Myths and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i> Séminaire culture générale, with Francois David Collin IMAG
-        </summary>
-        <b>Abstract:</b>
-        Many of us have seen the strong impact of so-called Deep Learning technologies for some time now. This is particularly true of their "generative" side, with Large Language Models (LLMs) such as ChatGPT, GPT-4, etc., whose use has become widespread in higher education, inviting teaching staff to question these tools, from their creation to their use. Here, we offer an overview of Deep Learning, taking a look at what data-driven learning is, and introducing the flagship of these new technologies: LLMs, their development, and uses.
-      </details>
-      <p>
-        [<a href="{{ site.url }}/_data/chatgpt_talk/public/index.html">slides</a>]
-        [<a href="https://plmlab.math.cnrs.fr/francoisdavid.collin/chatgpt-imag-talk">code</a>]
-      </p>
-    </li>
-  </ul>
+<ul>
+  <li>
+    <details>
+      <summary>
+        <img src="{{ site.url }}/_data/images/chat_gpt_talk.png" alt="ChatGPT talk" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+        October 2023: <i>ChatGPT & co, Myths and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i> Séminaire culture générale, with Francois David Collin IMAG
+      </summary>
+      <b>Abstract:</b>
+      Many of us have seen the strong impact of so-called Deep Learning technologies for some time now. This is particularly true of their "generative" side, with Large Language Models (LLMs) such as ChatGPT, GPT-4, etc., whose use has become widespread in higher education, inviting teaching staff to question these tools, from their creation to their use. Here, we offer an overview of Deep Learning, taking a look at what data-driven learning is, and introducing the flagship of these new technologies: LLMs, their development, and uses.
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/chatgpt_talk/public/index.html">slides</a>]
+      [<a href="https://plmlab.math.cnrs.fr/francoisdavid.collin/chatgpt-imag-talk">code</a>]
+    </p>
+  </li>
+</ul>
 
 
 - <details><summary>
@@ -121,35 +121,38 @@ Citizen science can increase public engagement, improve our knowledge and help m
 
 - July 2023: *Weighting areas under the margin in crowdsourced datasets* at [Journées des Statistiques de France (JDS) 2023](https://jds2023.sciencesconf.org/resource/page/id/19) Univ. Bruxelles.
 
-  <ul>
-    <li>
-      <img src="{{ site.url }}/_data/images/conal.png" alt="conal" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-      February 2023: <a href="https://groupes.renater.fr/wiki/ml-mtp/index"><i>ML-MTP</i></a> <i>Learning from crowds: going beyond aggregation schemes</i> Univ. Montpellier IMAG
-      <p>
-        [<a href="https://groupes.renater.fr/wiki/ml-mtp/_media/wiki/beamer.pdf">slides</a>]
-      </p>
-    </li>
-  </ul>
+
+<ul>
+  <li>
+    <img src="{{ site.url }}/_data/images/conal.png" alt="conal" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+    February 2023: <a href="https://groupes.renater.fr/wiki/ml-mtp/index"><i>ML-MTP</i></a> <i>Learning from crowds: going beyond aggregation schemes</i> Univ. Montpellier IMAG
+    <p>
+      [<a href="https://groupes.renater.fr/wiki/ml-mtp/_media/wiki/beamer.pdf">slides</a>]
+    </p>
+  </li>
+</ul>
+
 
 - October 2022: [*ML-MTP*](https://groupes.renater.fr/wiki/ml-mtp/index) *Improve learning combining crowdsourced labels by weighting Areas Under the Margin* Univ. Montpellier IMAG \[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
 
 - July 2022: [*GDR MaDICS*](https://www.madics.fr/event/symposium-madics-4/) "Gongshow" and poster session at Quatrième édition du Symposium MaDICS - Univ. Lyon
 
-  <ul>
-    <li>
-      <details>
-        <summary>
-          <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-          June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i> at Journées des Statistiques de France (JDS) 2022 Univ. Lyon.
-        </summary>
-        <b>Abstract:</b>
-        It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
-      </details>
-      <p>
-        [<a href="{{ site.url }}/_data/communication/beamer_jds_tlefort.pdf">slides</a>]
-      </p>
-    </li>
-  </ul>
+
+<ul>
+  <li>
+    <details>
+      <summary>
+        <img src="{{ site.url }}/_data/images/prob_diff.png" alt="difficulty simulation" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+        June 2022: <i>Crowdsourcing label noise simulation on image classification tasks</i> at Journées des Statistiques de France (JDS) 2022 Univ. Lyon.
+      </summary>
+      <b>Abstract:</b>
+      It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/communication/beamer_jds_tlefort.pdf">slides</a>]
+    </p>
+  </li>
+</ul>
 
 
 - June 2022: <i>Workshop: How to create a professional and personal website easily </i> at SemDoc (PhD seminar) - Univ. Montpellier IMAG
@@ -169,13 +172,14 @@ Those are known to be more computationally demanding in order of magnitude, but 
 - October 28 2021: *Introduction to neural network* with [Joseph Salmon](http://josephsalmon.eu/), at ML-MTP seminar - Univ. Montpellier IMAG. (session 0 for reading group on *Deep Learning: a statistical viewpoint*)<br>
 \[[slides]({{ site.url }}/_data/communication/tuto_deep.pdf)\] \[[code]({{ site.url }}/_data/communication/code_tuto_deep.zip)\]
 
-  <ul>
-    <li>
-      <img src="{{ site.url }}/_data/images/ridge_dd.png" alt="double desent ridge" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-      April 29, 2021: Paper club <i>Ridge Regularization: an Essential Concept in Data Science by Trevor Hastie</i> with <a href="https://bascouflorent.github.io/">Florent Bascou</a> at ML-MTP seminar - Univ. Montpellier IMAG
-      <p>
-        [<a href="https://arxiv.org/pdf/2006.00371.pdf">paper</a>]
-        [<a href="{{ site.url }}/_data/communication/ridge_ml_mtp.pdf">slides</a>]
-      </p>
-    </li>
-  </ul>
+
+<ul>
+  <li>
+    <img src="{{ site.url }}/_data/images/ridge_dd.png" alt="double desent ridge" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+    April 29, 2021: Paper club <i>Ridge Regularization: an Essential Concept in Data Science by Trevor Hastie</i> with <a href="https://bascouflorent.github.io/">Florent Bascou</a> at ML-MTP seminar - Univ. Montpellier IMAG
+    <p>
+      [<a href="https://arxiv.org/pdf/2006.00371.pdf">paper</a>]
+      [<a href="{{ site.url }}/_data/communication/ridge_ml_mtp.pdf">slides</a>]
+    </p>
+  </li>
+</ul>
