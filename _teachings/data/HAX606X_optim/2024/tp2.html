@@ -3199,7 +3199,7 @@ Objectifs de ce TP
 <h3 class="anchored" data-anchor-id="question-application-de-la-dichotomie">Question : Application de la dichotomie</h3>
 <p>Utiliser cet algorithme pour trouver le minimum global de la fonction suivante <span class="math display">x\mapsto x^4 - (x-1)^2+1.</span> On rappelle que trouver un minimum d’une fonction revient à annuler son gradient (sa dérivée en dimension 1).</p>
 <p>Pour visualiser la convergence, on tracera la taille de l’intervalle courant en fonction de l’indice de l’itération (on pourra modifier l’algorithme pour sortir la liste des solutions courantes, en utilisant <code>append</code> pour ajouter un élément à une liste, un exemple d’utilisation de cette fonction est proposé ci-dessous). Quelle est l’influence de la précision du critère de convergence sur le nombre d’itérations effectuées ? Comparer vos résultats avec l’implémentation de <code>scipy.optimize.bisect</code>.</p>
-<div id="9732491f" class="cell" data-execution_count="1">
+<div id="2934b87d" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> []</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>my_list.append(<span class="dv">3</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Ma liste est:&quot;</span>, my_list)</span>
@@ -3223,14 +3223,14 @@ Pour aller plus loin
 </div>
 <div class="callout-body-container callout-body">
 <p>En pratique il peut être plus informatif de visualiser la convergence en fonction du temps de calcul plutôt qu’en fonction du nombre d’itération. C’est notamment le cas si l’on compare entre eux deux algorithmes les itérations ont des coûts de calcul très différents. Proposez une telle visualisation, par exemple avec<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> un code similaire à :</p>
-<div id="3d89041e" class="cell" data-execution_count="2">
+<div id="4677f505" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> time</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    t0 <span class="op">=</span> time.perf_counter()</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    ... <span class="co"># Instruction dont on veut mesurer le temps d&#39;exécution</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    t1 <span class="op">=</span> time.perf_counter()</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(t1<span class="op">-</span>t0)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>5.2038999911019346e-05</code></pre>
+<pre><code>5.4296921007335186e-05</code></pre>
 </div>
 </div>
 <p>D’autres visualisations sont possibles, voir par exemple les graphiques générés par <code>benchopt</code><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
@@ -4317,12 +4317,12 @@ Pour aller plus loin
 <li>la tolérance,</li>
 <li>le rappel .</li>
 </ul>
-<p>Reprendre la troisième fonction de la question précédente et utiliser différents algorithmes disponibles, on comparera les résultats et les temps de calcul pour une tolérance de <span class="math inline">10^{-1}</span>, <span class="math inline">10^{-5}</span> puis <span class="math inline">10^{-9}</span> avec la même initialisation (les temps de calculs pourront être moyennés sur plusieurs répétitions pour plus de précision). Où se situe la dichotomie par rapport aux autres algorithmes ?</p>
+<p>Reprendre la deuxième fonction de la question précédente et utiliser différents algorithmes disponibles, on comparera les résultats et les temps de calcul pour une tolérance de <span class="math inline">10^{-1}</span>, <span class="math inline">10^{-5}</span> puis <span class="math inline">10^{-9}</span> avec la même initialisation (les temps de calculs pourront être moyennés sur plusieurs répétitions pour plus de précision). Où se situe la dichotomie par rapport aux autres algorithmes ?</p>
 </section>
 <section id="question-pour-aller-plus-loin-avec-les-callback" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="question-pour-aller-plus-loin-avec-les-callback">Question: Pour aller plus loin avec les <code>callback</code></h3>
 <p>Si vous étudiez bien la documentation de cette fonction <code>minimize</code>, l’utilisateur n’a pas d’accès direct au numéro de l’itération (seulement aux itérés générés). Utilisez le <code>callback</code> (et <code>args</code> si vous le souhaitez) pour afficher le numéro de l’itération <span class="math inline">k</span>, le point <span class="math inline">x_k</span> considéré et la valeur de <span class="math inline">f(x_k)</span>.</p>
-<div id="0817caf2" class="cell" data-execution_count="3">
+<div id="618cd3ef" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Exemple d&#39;utilisation de callback</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>iterations <span class="op">=</span> []  <span class="co"># liste pour stocker les itérés</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
