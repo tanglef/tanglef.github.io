@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.388">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Descente de gradients et variantes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="CC2023_files/libs/clipboard/clipboard.min.js"></script>
+<script src="CC2023_files/libs/quarto-html/quarto.js"></script>
+<script src="CC2023_files/libs/quarto-html/popper.min.js"></script>
+<script src="CC2023_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="CC2023_files/libs/quarto-html/anchor.min.js"></script>
+<link href="CC2023_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="CC2023_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="CC2023_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="CC2023_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="CC2023_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">
+<script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js">
+</script>
+
+  <script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Descente de gradients et variantes</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- Source of https://github.com/SaswatPadhi/pseudocode.js -->
+<p>Pour ce TP noté, vous devrez charger votre fichier sur Moodle, avant 22h, jeudi 09/03/2023.</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour ce travail vous devez déposer un <strong>unique</strong> fichier au format <code>.py</code>, structuré avec des cellules, dont le nom est <code>tp_note_HAX606X_Prenom_Nom.py</code>. Vous remplirez votre nom, prénom de manière adéquate. Si le nom de fichier ne suit pas cette forme, <span style="color:red">vous perdez 1 pt</span>.</p>
+<p>De plus, les personnes qui n’auront pas soumis leur devoir sur Moodle avant la limite obtiendront comme note <span style="color:red"> <strong>zéro</strong></span>. Ainsi, pensez à soumettre une version provisoire par sécurité…</p>
+</div>
+</div>
+<p>La note totale est sur <strong>20</strong> points répartis comme suit :</p>
+<ul>
+<li>qualité des réponses aux questions : <strong>15</strong> pts,</li>
+<li>qualité de rédaction et d’orthographe : <strong>1</strong> pts,</li>
+<li>qualité des graphiques (légendes, couleurs) : <strong>1</strong> pt</li>
+<li>qualité du code (noms de variables clairs, commentaires, code synthétique, etc.) : <strong>2</strong> pt</li>
+<li>reproductibilité (exécution correcte sur la machine du correcteur) et absence de bug : <strong>1</strong> pt</li>
+</ul>
+<div class="hidden">
+$$
+<p>$$</p>
+</div>
+<section id="notation" class="level2">
+<h2 class="anchored" data-anchor-id="notation">Notation</h2>
+<p>Pour un vecteur <span class="math inline">x\in\mathbb{R}^d</span>, on rappelle que la norme euclidienne est <span class="math inline">\left \lVert x \right \rVert_2=\sqrt{\sum_{i=1}^d x_i^2}</span> et la norme infinie est donnée par <span class="math inline">\left \lVert x \right \rVert_\infty = \max(\left \vert x_i \right \vert, i=1,\dots,d)</span>.</p>
+</section>
+<section id="algorithme-de-la-descente-de-gradient" class="level2">
+<h2 class="anchored" data-anchor-id="algorithme-de-la-descente-de-gradient">Algorithme de la descente de gradient</h2>
+<p>On donne ici l’algorithme de descente de gradient pour une fonction différentiable <span class="math inline">f:\mathbb{R}^d \to \mathbb{R}</span>,</p>
+<pre id="gd" class="pseudocode" style="display:hidden;">    \begin{algorithm}
+    \caption{Descente de gradient}
+    \begin{algorithmic}
+    \INPUT $\nabla f~(\texttt{function}), x_{\rm init}~(\texttt{numpy.ndarray}), \gamma~(\texttt{float}), \epsilon~(\texttt{float}), n_{\rm iter}~(\texttt{int})$
+    \STATE $x \gets x_{\rm init}$
+    \COMMENT{Initialization}
+    \FOR{$i=1,\dots,n_{\rm iter}$}
+        \STATE $g \gets \displaystyle \nabla f (x)$
+        \IF{$\|g\|_{\infty} \leq \epsilon$}
+            \STATE Break
+        \ENDIF
+        \STATE $x \gets x - \gamma g$
+    \ENDFOR
+    \OUTPUT $x$
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
+<section id="question-1a-coder-la-descente-de-gradient" class="level4">
+<h4 class="anchored" data-anchor-id="question-1a-coder-la-descente-de-gradient">Question 1a : Coder la descente de gradient</h4>
+<p>Adapter et coder en <code>Python</code> l’Algorithme ci-dessus pour avoir en sortie la liste de tous les itérés de la descente de gradient. Pour ce faire, on veillera à ce que le code puisse traiter le cas d’un vecteur <span class="math inline">x\in\mathbb{R}^d</span> avec <span class="math inline">d</span> quelconque, et pas uniquement le cas bi-dimensionnel (cf.&nbsp;question suivante). Pour vous aider, les éléments entre parenthèses indiquent le type des entrées/sorties, type que l’on obtient par exemple avec la commande <code>type</code>:</p>
+<div id="b577e1ee" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>vecteur <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(vecteur))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>&lt;class 'numpy.ndarray'&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="question-1b-test-multi-dimensionnel" class="level4">
+<h4 class="anchored" data-anchor-id="question-1b-test-multi-dimensionnel">Question 1b : Test multi-dimensionnel</h4>
+<p>Proposez un test de l’algorithme sur une fonction simple (par exemple quadratique) avec un espace de départ de dimension <span class="math inline">d=23</span>.</p>
+</section>
+<section id="question-1c-test-unidimensionnel" class="level4">
+<h4 class="anchored" data-anchor-id="question-1c-test-unidimensionnel">Question 1c : Test unidimensionnel</h4>
+<p>Prenons <span class="math inline">f:x\mapsto (x-1)^2</span>. Utiliser la fonction <code>subplots</code> de <code>matplotlib</code> pour créer deux graphiques l’un au dessus de l’autre, en affichant les <span class="math inline">15</span> premiers itérés avec un pas de <span class="math inline">0.1</span> et une tolérance de <span class="math inline">10^{-15}</span>, et une initialisation <span class="math inline">x_{\rm init} = x_0= -1/2</span>:</p>
+<ul>
+<li>afficher sur le graphique du haut la fonction <span class="math inline">f</span> (en bleu et en trait continu) ainsi que la suite des valeurs prise par la fonction <span class="math inline">f</span> sur les itérés de la descente de gradient, c’est-à-dire <span class="math inline">\big(f(x_k)\big)_{k=0,\dots, 14}</span> (en rouge, avec des marqueurs de votre choix).</li>
+<li>afficher sur le graphique du bas la trajectoire de l’amplitude de la dérivée, évaluée en chaque itéré, c’est-à-dire <span class="math inline">\big(|\nabla f(x_k)|\big)_{k=0,\dots, 14}</span>.</li>
+</ul>
+<p>L’axe des abscisses sera partagé entre les deux figures en utilisant l’argument <code>sharex</code> de la fonction <code>subplots</code>. Le résultat attendu pourra s’inspirer de la <a href="#fig-gd-test" class="quarto-xref">Figure&nbsp;1</a> ci-dessous.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div id="fig-gd-test" class="quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gd-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./grad_descent_test.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-gd-test-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Descente de gradient sur la fonction test
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="question-2-test-et-visualisation-sur-le-fonction-de-rosenbrock" class="level4">
+<h4 class="anchored" data-anchor-id="question-2-test-et-visualisation-sur-le-fonction-de-rosenbrock">Question 2 : Test et visualisation sur le fonction de Rosenbrock</h4>
+<p>Afficher sur un même graphique les lignes de niveaux de la fonction de Rosenbrock <span class="math inline">f_{\mathit{ros}}</span> en dimension <span class="math inline">d=2</span>: <span class="math display">
+\begin{align*}
+    f_{\mathit{ros}}:
+    \begin{pmatrix}
+        x_1 \\
+        x_2
+    \end{pmatrix}
+    \mapsto
+    (x_1 - 1) ^ 2 + 100 \cdot (x_2-x_1^2) ^ 2 \enspace,
+\end{align*}
+</span> ainsi que tous les itérés de l’algorithme de descente de gradient pour <span class="math inline">n_{\rm iter}=30</span>, <span class="math inline">\epsilon=10^{-10}</span> en partant du point <span class="math inline">x_{\rm init}=(-1, -0.5)</span> et pour deux choix de pas <span class="math inline">\gamma=10^{-5}</span> ou <span class="math inline">\gamma=10^{-3}</span>. On pourra par exemple utiliser <code>scipy.optimize.rosen_der</code> pour cela. Pour l’affichage graphique, on pourra s’inspirer de l’exemple donné ci-dessous:</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="1">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div id="fig-gd" class="quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./small_steps.svg" class="img-fluid figure-img">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig" id="fig-gd-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Variantes de descente de gradient
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="adapter-le-pas-dans-la-descente-de-gradient" class="level2">
+<h2 class="anchored" data-anchor-id="adapter-le-pas-dans-la-descente-de-gradient">Adapter le pas dans la descente de gradient</h2>
+<section id="question-3-algorithme-de-descente-de-gradient-avec-recherche-linéaire" class="level4">
+<h4 class="anchored" data-anchor-id="question-3-algorithme-de-descente-de-gradient-avec-recherche-linéaire">Question 3 : Algorithme de descente de gradient avec recherche linéaire</h4>
+<p>La méthode de recherche linéaire (🇬🇧: <em>line search</em>) permet de multiplier ou de diviser <span class="math inline">\gamma_k</span>, la taille du pas courant à l’itération <span class="math inline">k</span>, d’un facteur <span class="math inline">\tau</span>, si la fonction n’a pas assez décru (ce qui est quantifié par un nouveau paramètre <span class="math inline">\alpha</span>).</p>
+<pre id="gd_rech_lin" class="pseudocode" style="display:hidden;">    \begin{algorithm}
+    \caption{Descente de gradient avec recherche linéaire }
+    \begin{algorithmic}
+    \INPUT $f~(\texttt{function})$,$\nabla f~(\texttt{function})$,$ x_{\rm init}~(\texttt{numpy.ndarray})$,$ \gamma~(\texttt{float})$,$ \epsilon~(\texttt{float})$,$ n_{\rm iter}~(\texttt{int})$,$ \alpha~(\texttt{float})$,$ \tau~(\texttt{float})$ \\
+
+    \STATE $x \gets x_{\rm init}$
+    \COMMENT{Initialization}
+    \FOR{$i=1,\dots,n_{\rm iter}$}
+        \STATE $g \gets \displaystyle \nabla f (x)$
+        \IF{$\|g\|_{\infty} \leq \epsilon$}
+            \STATE Break
+        \ENDIF
+        \STATE $z \gets x - \gamma g$
+        \IF{$f(z) \leq f(x) - \alpha \gamma \|g\|_2^2$}
+            \STATE $x \gets z $
+            \STATE $\gamma \gets \gamma /\tau $
+        \ELSE
+            \STATE $\gamma \gets \tau \gamma $
+        \ENDIF
+    \ENDFOR
+    \OUTPUT $x~(\texttt{numpy.ndarray})$
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
+<p>Adapter et coder en <code>Python</code> l’algorithme ci-dessus pour avoir en sortie la liste de tous les itérés obtenus par la descente de gradient avec recherche linéaire, mais aussi la liste de tous les pas <span class="math inline">\gamma_k</span> utilisés. Dans la suite on utilisera <span class="math inline">\alpha =0.5, \tau=0.5</span>.</p>
+</section>
+<section id="question-4-algorithme-de-descente-de-gradient-avec-recherche-linéaire" class="level4">
+<h4 class="anchored" data-anchor-id="question-4-algorithme-de-descente-de-gradient-avec-recherche-linéaire">Question 4 : Algorithme de descente de gradient avec recherche linéaire</h4>
+<p>La méthode du pas adaptatif permet d’adapter la taille du pas courant <span class="math inline">\gamma_k</span> de manière plus souple que la méthode précédente. Représenter sur un même graphique l’évolution de la taille des pas au cours des itérations pour les trois algorithmes introduits.</p>
+<pre id="gd_adapt" class="pseudocode" style="display:hidden;">    \begin{algorithm}
+    \caption{Descente de gradient avec recherche linéaire }
+    \begin{algorithmic}
+    \INPUT $\nabla f~(\texttt{function})$,$ x_{\rm init}~(\texttt{numpy.ndarray})$,$ \gamma~(\texttt{float})$,$ \epsilon~(\texttt{float})$,$ n_{\rm iter}~(\texttt{int})$ \\
+    \COMMENT{Initialization}
+    \STATE $\gamma_0 \gets \gamma$
+    \STATE $x_0 \gets x_{\rm init}$
+    \STATE $x_1 \gets x_{0} - \gamma_0 \nabla f(x_0)$
+    \STATE $\theta_0 \gets +\infty$
+    \FOR{$i=1,\dots,n_{\rm iter}$}
+        \STATE $\gamma_k \gets  \min \left(\sqrt{1+\theta_{k-1}} \gamma_{k-1},\frac{1}{2} \frac{\|x_k - x_{k-1}\|}{\|
+        \nabla f (x_k) - \nabla f (x_{k-1})\|} \right)$
+        \STATE $g \gets \displaystyle \nabla f (x_k)$
+        \IF{$\|g\|_{\infty} \leq \epsilon$}
+            \STATE Break
+        \ENDIF
+        \STATE $x_{k+1} \gets x_k - \gamma_k g$
+        \STATE $\theta_k \gets \frac{\gamma_k}{\gamma_{k-1}} $
+    \ENDFOR
+    \OUTPUT $x_k ~(\texttt{numpy.ndarray})$
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
+<p>La méthode du pas adaptatif permet d’adapter la taille du pas courant <span class="math inline">\gamma_k</span> de manière plus souple. Représenter sur un même graphique l’évolution de la taille des pas au cours des itérations, et ce pour les trois algorithmes introduits.</p>
+</section>
+<section id="question-5-comparaison-des-convergences-en-fonction-des-itérés" class="level4">
+<h4 class="anchored" data-anchor-id="question-5-comparaison-des-convergences-en-fonction-des-itérés">Question 5 : comparaison des convergences en fonction des itérés</h4>
+<p>Le minimum global de la fonction de Rosenbrock <span class="math inline">f_{ros}</span> est atteint en <span class="math inline">x^\star = (1,1)</span>, c’est-à-dire:</p>
+<p><span class="math display">
+x^\star \in \displaystyle\operatorname*{argmin}_{x\in\mathbb{R}^2}f_{ros}(x) \enspace.
+</span></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour une fonction <span class="math inline">g</span>, la notation <span class="math inline">x^* \in \displaystyle\operatorname*{argmin}_{x}g(x)</span> signifie que <span class="math inline">x^*</span> est un point qui atteint la valeur <span class="math inline">\displaystyle\min_{x}g(x)</span>, ainsi: <span class="math inline">g(x^*)=\displaystyle\min_{x}g(x)</span>.</p>
+</div>
+</div>
+<p>Comparer la convergence de ces trois méthodes de la manière suivante :</p>
+<ul>
+<li>Représenter sur les lignes de niveau de la fonction de Rosenbrock l’image des itérés courants. On pourra tenter de reproduire la <a href="#fig-gd" class="quarto-xref">Figure&nbsp;2</a> pour les choix de pas (initiaux) et de vecteur <span class="math inline">x_{\rm init}</span> similaires.</li>
+<li>Représenter sur un premier graphique la norme du gradient en l’itéré courant en fonction de l’indice de l’itération pour chacune des trois méthodes.</li>
+<li>Tracer sur un second graphique la distance (euclidienne) de l’itéré courant <span class="math inline">x_k</span> à <span class="math inline">x^\star</span>.</li>
+<li>Quelle méthode vous semble être la plus/moins avantageuse (justifier très brièvement à partir de vos graphiques)? La réponse sera écrite dans un bref commentaire de quelques lignes dans votre fichier <code>py</code>.</li>
+</ul>
+<p>Pour améliorer la lisibilité du graphique, nous rappelons que l’usage d’une échelle logarithmique sur la mesure observée peut être utile.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    const typesetMath = (el) => {
+      if (window.MathJax) {
+        // MathJax Typeset
+        window.MathJax.typeset([el]);
+      } else if (window.katex) {
+        // KaTeX Render
+        var mathElements = el.getElementsByClassName("math");
+        var macros = [];
+        for (var i = 0; i < mathElements.length; i++) {
+          var texText = mathElements[i].firstChild;
+          if (mathElements[i].tagName == "SPAN") {
+            window.katex.render(texText.data, mathElements[i], {
+              displayMode: mathElements[i].classList.contains('display'),
+              throwOnError: false,
+              macros: macros,
+              fleqn: false
+            });
+          }
+        }
+      }
+    }
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        typesetMath(container);
+        return container.innerHTML
+      } else {
+        typesetMath(note);
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      typesetMath(note);
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<script>
+  pseudocode.renderClass("pseudocode");
+</script>
+<script>
+  pseudocode.renderElement(document.getElementById("gd"),{ noEnd: true });
+</script>
+<script>
+  pseudocode.renderElement(document.getElementById("gd_adapt"),{ noEnd: true });
+</script>
+<script>
+  pseudocode.renderElement(document.getElementById("gd_rech_lin"),{ noEnd: true });
+</script>
+
+
+
+
+</body></html>
