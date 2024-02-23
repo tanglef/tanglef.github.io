@@ -3097,15 +3097,15 @@ vertical-align: -.125em;
   </ul></li>
   <li><a href="#recherche-de-minimum-local-par-la-méthode-du-nombre-dor" id="toc-recherche-de-minimum-local-par-la-méthode-du-nombre-dor" class="nav-link" data-scroll-target="#recherche-de-minimum-local-par-la-méthode-du-nombre-dor">Recherche de minimum local par la méthode du nombre d’or</a>
   <ul>
-  <li><a href="#question-méthode-du-nombre-dor-et-extremum" id="toc-question-méthode-du-nombre-dor-et-extremum" class="nav-link" data-scroll-target="#question-méthode-du-nombre-dor-et-extremum">Question: Méthode du nombre d’or et extremum</a></li>
-  <li><a href="#question-applications" id="toc-question-applications" class="nav-link" data-scroll-target="#question-applications">Question: Applications</a></li>
+  <li><a href="#question-méthode-du-nombre-dor-et-extremum" id="toc-question-méthode-du-nombre-dor-et-extremum" class="nav-link" data-scroll-target="#question-méthode-du-nombre-dor-et-extremum">Question : Méthode du nombre d’or et extremum</a></li>
+  <li><a href="#question-applications" id="toc-question-applications" class="nav-link" data-scroll-target="#question-applications">Question : Applications</a></li>
   <li><a href="#question-influence-de-linitialisation" id="toc-question-influence-de-linitialisation" class="nav-link" data-scroll-target="#question-influence-de-linitialisation">Question : Influence de l’initialisation</a></li>
   </ul></li>
   <li><a href="#optimisation-avec-scipy" id="toc-optimisation-avec-scipy" class="nav-link" data-scroll-target="#optimisation-avec-scipy">Optimisation avec <code>scipy</code></a>
   <ul>
   <li><a href="#question-avec-scipy" id="toc-question-avec-scipy" class="nav-link" data-scroll-target="#question-avec-scipy">Question : Avec <code>scipy</code></a></li>
-  <li><a href="#question-pour-aller-plus-loin-avec-les-callback" id="toc-question-pour-aller-plus-loin-avec-les-callback" class="nav-link" data-scroll-target="#question-pour-aller-plus-loin-avec-les-callback">Question: Pour aller plus loin avec les <code>callback</code></a></li>
-  <li><a href="#question-grille-de-points-dinitialisation" id="toc-question-grille-de-points-dinitialisation" class="nav-link" data-scroll-target="#question-grille-de-points-dinitialisation">Question: grille de points d’initialisation</a></li>
+  <li><a href="#question-pour-aller-plus-loin-avec-les-callback" id="toc-question-pour-aller-plus-loin-avec-les-callback" class="nav-link" data-scroll-target="#question-pour-aller-plus-loin-avec-les-callback">Question : Pour aller plus loin avec les <code>callback</code></a></li>
+  <li><a href="#question-grille-de-points-dinitialisation" id="toc-question-grille-de-points-dinitialisation" class="nav-link" data-scroll-target="#question-grille-de-points-dinitialisation">Question : grille de points d’initialisation</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -3165,7 +3165,7 @@ Objectifs de ce TP
     \begin{algorithmic}
     \INPUT $f, a, b, \epsilon$
     \STATE $x^{\downarrow}=\min(a,b),\quad x^{\uparrow}=\max(a,b)$
-    \COMMENT{Initialization}
+    \COMMENT{Initialisation}
     \WHILE{$x^{\uparrow}-x^{\downarrow}&gt;\epsilon$}
         \STATE $\bar{x} \gets \frac{1}{2}(x^{\uparrow}+x^{\downarrow})$
         \COMMENT{Calcul du milieu du segment courant}
@@ -3193,13 +3193,13 @@ Objectifs de ce TP
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> i <span class="op">==</span> <span class="dv">3</span>:</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">break</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(i)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Le critère d’arrêt peut aussi être modifié, on peut penser à contrôler la taille de l’intervalle courant, la norme <span class="math inline">L^2</span> entre les bornes de l’intervalle, la distance pour l’itéré courant à <span class="math inline">0</span> en norme <span class="math inline">L^p</span></p>
+<p>Le critère d’arrêt peut aussi être modifié. On peut penser à contrôler la taille de l’intervalle courant, la norme <span class="math inline">L^2</span> entre les bornes de l’intervalle, la distance pour l’itéré courant à <span class="math inline">0</span> en norme <span class="math inline">L^p</span></p>
 </section>
 <section id="question-application-de-la-dichotomie" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="question-application-de-la-dichotomie">Question : Application de la dichotomie</h3>
 <p>Utiliser cet algorithme pour trouver le minimum global de la fonction suivante <span class="math display">x\mapsto x^4 - (x-1)^2+1.</span> On rappelle que trouver un minimum d’une fonction revient à annuler son gradient (sa dérivée en dimension 1).</p>
-<p>Pour visualiser la convergence, on tracera la taille de l’intervalle courant en fonction de l’indice de l’itération (on pourra modifier l’algorithme pour sortir la liste des solutions courantes, en utilisant <code>append</code> pour ajouter un élément à une liste, un exemple d’utilisation de cette fonction est proposé ci-dessous). Quelle est l’influence de la précision du critère de convergence sur le nombre d’itérations effectuées ? Comparer vos résultats avec l’implémentation de <code>scipy.optimize.bisect</code>.</p>
-<div id="2934b87d" class="cell" data-execution_count="1">
+<p>Pour visualiser la convergence, on tracera la taille de l’intervalle courant en fonction de l’indice de l’itération (on pourra modifier l’algorithme pour sortir la liste des solutions courantes, en utilisant <code>append</code> pour ajouter un élément à une liste. Un exemple d’utilisation de cette fonction est proposé ci-dessous). Quelle est l’influence de la précision du critère de convergence sur le nombre d’itérations effectuées ? Comparer vos résultats avec l’implémentation de <code>scipy.optimize.bisect</code>.</p>
+<div id="08d11215" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> []</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>my_list.append(<span class="dv">3</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Ma liste est:&quot;</span>, my_list)</span>
@@ -3222,15 +3222,15 @@ Pour aller plus loin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>En pratique il peut être plus informatif de visualiser la convergence en fonction du temps de calcul plutôt qu’en fonction du nombre d’itération. C’est notamment le cas si l’on compare entre eux deux algorithmes les itérations ont des coûts de calcul très différents. Proposez une telle visualisation, par exemple avec<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> un code similaire à :</p>
-<div id="4677f505" class="cell" data-execution_count="2">
+<p>En pratique il peut être plus informatif de visualiser la convergence en fonction du temps de calcul plutôt qu’en fonction du nombre d’itération. C’est notamment le cas si l’on compare entre eux deux algorithmes. Les itérations ont des coûts de calcul très différents. Proposez une telle visualisation, par exemple avec<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> un code similaire à :</p>
+<div id="8f0e7837" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> time</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    t0 <span class="op">=</span> time.perf_counter()</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    ... <span class="co"># Instruction dont on veut mesurer le temps d&#39;exécution</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    t1 <span class="op">=</span> time.perf_counter()</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(t1<span class="op">-</span>t0)</span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>5.4296921007335186e-05</code></pre>
+<pre><code>5.042197881266475e-05</code></pre>
 </div>
 </div>
 <p>D’autres visualisations sont possibles, voir par exemple les graphiques générés par <code>benchopt</code><a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
@@ -4247,7 +4247,7 @@ Pour aller plus loin
     \caption{La méthode du nombre d&#39;or}
     \begin{algorithmic}
     \INPUT $f, a, b, \epsilon$
-    \COMMENT{Initialization:}
+    \COMMENT{Initialisation:}
     \STATE $x^{\downarrow}=\min(a,b), x^{\uparrow}=\max(a,b)$
     \STATE $x_1 \gets \frac{1}{\varphi} x^{\downarrow} + \left(1-\frac{1}{\varphi}\right)x^{\uparrow}$
     \STATE $f_1 \gets f(x_1)$
@@ -4274,11 +4274,11 @@ Pour aller plus loin
     \end{algorithm}
 </pre>
 <section id="question-méthode-du-nombre-dor-et-extremum" class="level3">
-<h3 class="anchored" data-anchor-id="question-méthode-du-nombre-dor-et-extremum">Question: Méthode du nombre d’or et extremum</h3>
+<h3 class="anchored" data-anchor-id="question-méthode-du-nombre-dor-et-extremum">Question : Méthode du nombre d’or et extremum</h3>
 <p>Implémenter la méthode du nombre d’or pour une fonction <span class="math inline">f</span> quelconque en entrée, en utilisant une boucle <code>for</code> et un <code>break</code>.</p>
 </section>
 <section id="question-applications" class="level3">
-<h3 class="anchored" data-anchor-id="question-applications">Question: Applications</h3>
+<h3 class="anchored" data-anchor-id="question-applications">Question : Applications</h3>
 <p>Tester la méthode du nombre d’or sur différentes fonctions :</p>
 <ul>
 <li><span class="math inline">x\mapsto x^2+2</span> sur <span class="math inline">[-5, 5]</span> puis sur <span class="math inline">[-5, 20]</span>, <!-- % \item $x\mapsto x^3 - e^x$ sur $[0, 3]$,
@@ -4315,19 +4315,19 @@ Pour aller plus loin
 <li>les méthodes disponibles,</li>
 <li>l’initialisation (en déduire un avantage de ces méthodes par rapport à la dichotomie),</li>
 <li>la tolérance,</li>
-<li>le rappel .</li>
+<li>le rappel (🇬🇧: <em>callback</em>).</li>
 </ul>
 <p>Reprendre la deuxième fonction de la question précédente et utiliser différents algorithmes disponibles, on comparera les résultats et les temps de calcul pour une tolérance de <span class="math inline">10^{-1}</span>, <span class="math inline">10^{-5}</span> puis <span class="math inline">10^{-9}</span> avec la même initialisation (les temps de calculs pourront être moyennés sur plusieurs répétitions pour plus de précision). Où se situe la dichotomie par rapport aux autres algorithmes ?</p>
 </section>
 <section id="question-pour-aller-plus-loin-avec-les-callback" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="question-pour-aller-plus-loin-avec-les-callback">Question: Pour aller plus loin avec les <code>callback</code></h3>
+<h3 class="anchored" data-anchor-id="question-pour-aller-plus-loin-avec-les-callback">Question : Pour aller plus loin avec les <code>callback</code></h3>
 <p>Si vous étudiez bien la documentation de cette fonction <code>minimize</code>, l’utilisateur n’a pas d’accès direct au numéro de l’itération (seulement aux itérés générés). Utilisez le <code>callback</code> (et <code>args</code> si vous le souhaitez) pour afficher le numéro de l’itération <span class="math inline">k</span>, le point <span class="math inline">x_k</span> considéré et la valeur de <span class="math inline">f(x_k)</span>.</p>
-<div id="618cd3ef" class="cell" data-execution_count="3">
+<div id="1b3f2033" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Exemple d&#39;utilisation de callback</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>iterations <span class="op">=</span> []  <span class="co"># liste pour stocker les itérés</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> callback(x):  <span class="co"># callback ne prend que l&#39;itéré courant</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>iterations.append(x)  <span class="co"># on ajoute l&#39;itéré courant</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    iterations.append(x)  <span class="co"># on ajoute l&#39;itéré courant</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>scipy.optimize.minimize(ma_fonction, x0, callback<span class="op">=</span>callback)</span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(iterations)  <span class="co"># liste des itérés</span></span></code><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -4336,7 +4336,7 @@ Pour aller plus loin
 <p>Dans la dernière fonction considérée, l’hypothèse d’unimodalité n’était pas vérifiée sur l’intervalle considéré. Les méthodes d’optimisation en général ne vont pas trouver le minimum global, mais un minimum local. Sortir des minima locaux est un problème qui requiert des techniques plus avancées<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
 <div class="no-row-height column-margin column-container"><li id="fn6"><p><sup>6</sup> Par exemple: <a href="https://fr.wikipedia.org/wiki/Algorithme_du_gradient_stochastique">https://fr.wikipedia.org/wiki/Algorithme_du_gradient_stochastique</a></p></li></div></section>
 <section id="question-grille-de-points-dinitialisation" class="level3">
-<h3 class="anchored" data-anchor-id="question-grille-de-points-dinitialisation">Question: grille de points d’initialisation</h3>
+<h3 class="anchored" data-anchor-id="question-grille-de-points-dinitialisation">Question : grille de points d’initialisation</h3>
 <p>Utilisez la méthode par défaut de <code>scipy</code> avec une grille de points d’initialisation sur la fonction <span class="math display">
 g: x \mapsto \exp\left(\frac{1}{2}x^2\right) - x^3 + 10\cos(x),
 </span> pour <span class="math inline">x\in [-3, 3]</span>. On parle de bassin d’attraction pour un ensemble de point qui convergent vers un même minimum. Combien de bassin d’attractions observez-vous ? Associez leur une couleur et proposez une visualisation de la correspondance entre le point initial et la solution trouvée.</p>
