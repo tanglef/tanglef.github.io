@@ -27,6 +27,10 @@ $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
 <li> sujet: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/2024/tp2.html">[optimisation 1D]</a> </li>
 </ul>
 
+<h2> TP3: Descentes de gradient et variantes </h2>
+<ul>
+<li> sujet: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/2024/tp3.html">[Descentes de gradient]</a> </li>
+</ul>
 
 # 2022-2023
 
