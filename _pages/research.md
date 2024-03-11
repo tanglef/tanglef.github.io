@@ -100,6 +100,28 @@ In supervised learning — for instance in image classification — modern massi
   <li>
     <details>
       <summary>
+        <img src="{{ site.url }}/_data/images/plantnet_scheme.png" alt="plantnet talk marbec" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+        March 2024 <i>Apprentissage collaboratif d'espèces de plantes et agrégation de labels dans Pl@ntNet</i> IA-ECO seminar (MARBEC)
+      </summary>
+      <b>Abstract:</b>
+        Deep learning models for plant species identification rely on large annotated datasets. The Pl@ntNet system enables global data collection by allowing users to upload and annotate plant observations, leading to noisy labels due to diverse user skills. Achieving consensus is crucial for training, but the vast scale of collected data (number of observations, users and species) makes traditional label aggregation strategies challenging. Existing methods either retain all observations, resulting in noisy training data or selectively keep those with sufficient votes, discarding valuable information. Additionally, as many species are rarely observed, user expertise can not be evaluated as an inter-user agreement: otherwise, botanical experts would have a lower weight in the AI training step than the average user.
+        Our proposed label aggregation strategy aims to cooperatively train plant identification AI models. This strategy estimates user expertise as a trust score per worker based on their ability to identify plant species from crowdsourced data. The trust score is recursively estimated from correctly identified species given the current estimated labels. This interpretable score exploits botanical experts’ knowledge and the heterogeneity of users. Subsequently, our strategy removes unreliable observations but retains those with limited trusted annotations, unlike other approaches.
+        We evaluate our strategy on a large subset of the Pl@ntNet database focused on European flora, comprising over 6M observations and 800K users. This anonymized dataset of votes and observations is released [openly](https://doi.org/10.5281/zenodo.10782465). We demonstrate that estimating users’ skills based on the diversity of their expertise enhances labeling performance.
+        Our findings emphasize the synergy of human annotation and data filtering in improving AI performance for a refined training dataset. We explore incorporating AI-based votes alongside human input in the label aggregation. This can further enhance human-AI interactions to detect unreliable observations (even with few votes).
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/communication/Cooperative_learning_of_Pl_ntNet_s_Artificial_Intelligence_algorithm.pdf">slides</a>]
+    </p>
+  </li>
+</ul>
+
+
+
+
+<ul>
+  <li>
+    <details>
+      <summary>
         <img src="{{ site.url }}/_data/images/chat_gpt_talk.png" alt="ChatGPT talk" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
         October 2023: <i>ChatGPT & co, Myths and Reality. Everything you wanted to ask about Deep Learning but did not dare to</i> Séminaire culture générale, with Francois David Collin IMAG
       </summary>
