@@ -3203,7 +3203,7 @@ Objectifs de ce TP
 <p>Adapter en Python l’algorithme de la descente de gradient pour avoir en sortie la liste de la suite des itérés <span class="math inline">(x_k)_k</span>.</p>
 <p>Vérifier que votre méthode obtient bien le minimum global pour la fonction <span class="math inline">f_{test}</span>: <span class="math display">
 \begin{align*}
-f_{test}:\quad  \mathbb{R}^2 &amp;\to \mathbb{R}^2\\
+f_{test}:\quad  \mathbb{R}^2 &amp;\to \mathbb{R}\\
 \begin{pmatrix} x_1 \\ x_2 \\\end{pmatrix} &amp; \mapsto (x_1 - 1)^2 + 3(x_2 + 1)^2
 \end{align*}
 </span></p>
@@ -13133,7 +13133,7 @@ f_{\alpha, \beta}(x,y) = \frac{y^2}{\alpha} + \frac{x^2}{\beta}, \alpha,\beta&gt
 
         \FOR{$i=1,\dots,n_{\rm iter}$}
 
-        \FOR{$j=1,\dots,d$}
+        \FOR{$j=1,\dots,p$}
         \STATE $x_j \gets x_j - \gamma \frac{\partial f}{\partial x_j}(x)$
         \COMMENT{Itération de descente de gradient sur la coordonnée $j$}
         \ENDFOR
@@ -13172,7 +13172,7 @@ f_r(x,y) = (1-x)^2 + 100 (y-x^2)^2
 <li>Représenter les lignes de niveau sur <span class="math inline">[0, 1.5]^2</span>. D’où vient la difficulté d’optimiser cette fonction ?</li>
 <li>Minimiser la fonction de Rosenbrock avec la descente de gradient classique puis la descente de gradient par coordonnées en initialisant avec 3 points différents dans <span class="math inline">[-3,3]^2</span> (n’étant pas la solution). Vous utiliserez la même taille de pas et le même nombre d’itérations pour chaque point initial (utilisez des valeurs qui permettent de voir des convergences).</li>
 <li>Proposer deux visualisations graphiques permettant de comparer les trajectoires de convergence.</li>
-<li>Utiliser la méthode de Nelson-Mead de <code>scipy</code> pour minimiser la fonction de Rosenbrock. Comparer le nombre d’itérations effectuées avec celui de la descente de gradient (classique et par coordonnées) pour un même seuil de tolérance. Interpréter.</li>
+<li>Utiliser la méthode de Nelder-Mead de <code>scipy</code> pour minimiser la fonction de Rosenbrock. Comparer le nombre d’itérations effectuées avec celui de la descente de gradient (classique et par coordonnées) pour un même seuil de tolérance. Interpréter.</li>
 </ul>
 </section>
 </section>
