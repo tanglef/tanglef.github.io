@@ -100,7 +100,7 @@ In supervised learning — for instance in image classification — modern massi
   <li>
     <details>
       <summary>
-        <img src="{{ site.url }}/_data/images/plantnet_scheme.png" alt="plantnet talk marbec" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
+        <img src="{{ site.url }}/_data/images/Plantnet_scheme.png" alt="plantnet talk marbec" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
         March 2024 <i>Apprentissage collaboratif d'espèces de plantes et agrégation de labels dans Pl@ntNet</i> IA-ECO seminar (MARBEC)
       </summary>
       <b>Abstract:</b>
