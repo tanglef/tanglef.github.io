@@ -74,7 +74,7 @@ Numerical validation is at the core of machine learning research as it allows to
 In supervised learning — for instance in image classification — modern massive datasets are commonly labeled by a crowd of workers. Labeling errors can happen because of the workers abilities or tasks identification difficulty. Some intrinsically ambiguous tasks might fool expert workers, which could eventually be harmful to the learning step. In a standard supervised learning setting — with one label per task — the Area Under the Margin (AUM) is tailored to identify mislabeled data. We adapt the AUM to identify ambiguous tasks in crowdsourced learning scenarios, introducing the Weighted AUM (WAUM). The WAUM is an average of AUMs weighted by task-dependent scores. We show that the WAUM can help discard ambiguous tasks from the training set, leading to better generalization or calibration performance.
     </details>
     <p>
-      [<a href="{{ site.url }}/_data/communication/papers/jds23.pdf">paper</a>]
+      [<a href="{{ site.url }}/_data/papers/jds23.pdf">paper</a>]
     </p>
   </li>
 </ul>
@@ -89,7 +89,7 @@ In supervised learning — for instance in image classification — modern massi
       It is common to collect labeled datasets using crowdsourcing. Yet, label quality depends deeply on the task difficulty and on the workers' abilities. With such datasets, the lack of ground truth makes it hard to assess the quality of annotations. There are few open-access crowdsourced datasets, and even fewer that provide both heterogeneous tasks in difficulty and all workers' answers before the aggregation. We propose a new crowdsourcing simulation framework with quality control. This allows us to evaluate different empirical learning strategies empirically from the obtained labels. Our goal is to separate different sources of noise: workers that do not provide any information on the true label against poorly performing workers, useful on easy tasks.
     </details>
     <p>
-      [<a href="{{ site.url }}/_data/communication/papers/jds22.pdf">paper</a>]
+      [<a href="{{ site.url }}/_data/papers/jds22.pdf">paper</a>]
     </p>
   </li>
 </ul>
