@@ -68,6 +68,7 @@ Numerical validation is at the core of machine learning research as it allows to
   <li>
     <details>
       <summary>
+      <img src="{{ site.url }}/_data/images/shap_cap.png" alt="shapley values for workers" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
         July 2024 (Under Review): <i>Weighted majority vote using Shapley values in crowdsourcing</i>  by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>,  <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly and <a href="http://josephsalmon.eu/">J. Salmon </a> </a> .
       </summary>
       <b>Abstract:</b>
