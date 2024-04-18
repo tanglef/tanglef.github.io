@@ -77,10 +77,6 @@ Numerical validation is at the core of machine learning research as it allows to
       [<a href="{{ site.url }}/_data/papers/cap24.pdf">paper</a>]
     </p>
   </li>
-</ul>
-<ul>
-
-<ul>
   <li>
     <details>
       <summary>
@@ -95,10 +91,6 @@ demonstrate that estimating users’ skills based on the diversity of their expe
       [<a href="{{ site.url }}/_data/papers/jds24.pdf">paper</a>]
     </p>
   </li>
-</ul>
-<ul>
-
-<ul>
   <li>
     <details>
       <summary>
@@ -111,8 +103,6 @@ In supervised learning — for instance in image classification — modern massi
       [<a href="{{ site.url }}/_data/papers/jds23.pdf">paper</a>]
     </p>
   </li>
-</ul>
-<ul>
   <li>
     <details>
       <summary>
@@ -147,12 +137,6 @@ In supervised learning — for instance in image classification — modern massi
       [<a href="{{ site.url }}/_data/communication/Cooperative_learning_of_Pl_ntNet_s_Artificial_Intelligence_algorithm.pdf">slides</a>]
     </p>
   </li>
-</ul>
-
-
-
-
-<ul>
   <li>
     <details>
       <summary>
