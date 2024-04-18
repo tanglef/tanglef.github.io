@@ -126,7 +126,7 @@ In supervised learning — for instance in image classification — modern massi
     <details>
       <summary>
         <img src="{{ site.url }}/_data/images/Plantnet_scheme.png" alt="plantnet talk marbec" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-        March 2024 <i>Apprentissage collaboratif d'espèces de plantes et agrégation de labels dans Pl@ntNet</i> IA-ECO seminar (MARBEC)
+        March 2024 <i>Apprentissage collaboratif d'espèces de plantes et agrégation de labels dans Pl@ntNet</i> <a href="https://docs.google.com/document/d/1w7YNvQG4v7QCJj86sjO4PLqOYPOT4QTOD8Am18GgT2Q/edit#heading=h.607qmvjxwu93">IA-ECO seminar </a>, UMR MARBEC
       </summary>
       <b>Abstract:</b>
         Deep learning models for plant species identification rely on large annotated datasets. The Pl@ntNet system enables global data collection by allowing users to upload and annotate plant observations, leading to noisy labels due to diverse user skills. Achieving consensus is crucial for training, but the vast scale of collected data (number of observations, users and species) makes traditional label aggregation strategies challenging. Existing methods either retain all observations, resulting in noisy training data or selectively keep those with sufficient votes, discarding valuable information. Additionally, as many species are rarely observed, user expertise can not be evaluated as an inter-user agreement: otherwise, botanical experts would have a lower weight in the AI training step than the average user.
