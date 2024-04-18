@@ -25,23 +25,23 @@ classes: wide
 <summary>
   <img src="{{ site.url }}/_data/images/pipeline_peerannot.png" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
 2023 <i>Peerannot: classification for crowdsourced image datasets with Python</i>
-by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
+by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> in Computo </summary>
 <b> Abstract: </b>
 Crowdsourcing is a quick and easy way to collect labels for large datasets, involving many workers. However, workers often disagree with each other. Sources of error can arise from the workers’ skills, but also from the intrinsic difficulty of the task. We present peerannot: a Python library for managing and learning from crowdsourced labels for classification. Our library allows users to aggregate labels from common noise models or train a deep learning-based classifier directly from crowdsourced labels. In addition, we provide an identification module to easily explore the task difficulty of datasets and worker capabilities. </details>
 </li>
 <p>
-  [<a href="https://tanglef.github.io/computo_2023/">Preprint</a>]
+  [<a href="https://computo.sfds.asso.fr/published-202402-lefort-peerannot/">Paper</a>]
   [<a href="https://peerannot.github.io/">peerannot library doc</a>]
   [<a href="https://github.com/peerannot/peerannot">peerannot github</a>]
 </p>
 </ul>
 
 - <details><summary>
-2023 (Under review): <i>Identify ambiguous tasks combining crowdsourced labels by weighting Areas Under the Margin</i>
-by <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> </summary>
+2024 <i>Identify ambiguous tasks combining crowdsourced labels by weighting Areas Under the Margin</i>
+by <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> in TMLR </summary>
 <b> Abstract: </b>
      In supervised learning - for instance in image classification - modern massive datasets are commonly labeled by a crowd of workers. The obtained labels in this crowdsourcing setting are then aggregated for training. The aggregation step generally leverages a per-worker trust score. Yet, such worker-centric approaches discard each task's ambiguity. Some intrinsically ambiguous tasks might even fool expert workers, which could eventually be harmful to the learning step. In a standard supervised learning setting - with one label per task - the Area Under the Margin (AUM) is tailored to identify mislabeled data. We adapt the AUM to identify ambiguous tasks in crowdsourced learning scenarios, introducing the Weighted AUM (WAUM). The WAUM is an average of AUMs weighted by task-dependent scores. We show that the WAUM can help discard ambiguous tasks from the training set, leading to better generalization or calibration performance. We report improvements over existing strategies for learning a crowd, both for simulated settings and for the CIFAR-10H, LabelMe and Music crowdsourced datasets. </details>
-\[[ArXiv](https://arxiv.org/abs/2209.15380)\]\[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\]
+\[[ArXiv](https://arxiv.org/abs/2209.15380)\]\[[slides]({{ site.url }}/_data/communication/beamer_mlmtp_waum.pdf)\] \[[Openreview](https://openreview.net/forum?id=raD846nj2q&noteId=OKobldgiNW)\]
 
 
 ## In Proceedings of Conferences
@@ -63,6 +63,40 @@ Numerical validation is at the core of machine learning research as it allows to
 </ul>
 
 ### National Conferences
+
+<ul>
+  <li>
+    <details>
+      <summary>
+        July 2024 (Under Review): <i>Weighted majority vote using Shapley values in crowdsourcing</i>  by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>,  <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly and <a href="http://josephsalmon.eu/">J. Salmon </a> </a> .
+      </summary>
+      <b>Abstract:</b>
+      Crowdsourcing has emerged as a pivotal paradigm for harnessing collective intelligence to solve data annotation tasks. Effective label aggregation, crucial for leveraging the diverse judgments of contributors, remains a fundamental challenge in crowdsourcing systems. This paper introduces a novel label aggregation strategy based on Shapley values, a concept originating from cooperative game theory. By integrating Shapley values as worker weights into the Weighted Majority Vote label aggregation (WMV), our proposed framework aims to address the interpretability of weights assigned to workers. This aggregation reduces the complexity of probabilistic models and the difficulty of the final interpretation of the aggregation from the workers’ votes. We show improved accuracy against other WMV-based label aggregation strategies. We demonstrate the efficiency of our strategy on various real datasets to explore multiple crowdsourcing scenarios.
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/papers/cap24.pdf">paper</a>]
+    </p>
+  </li>
+</ul>
+<ul>
+
+<ul>
+  <li>
+    <details>
+      <summary>
+        May 2024: <i>Cooperative learning of Pl@ntNet’s Artificial Intelligence algorithm using label aggregation</i>, JDS 2024 by  <a href="https://tanglef.github.io/">T. Lefort </a>, A. Affouard <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://josephsalmon.eu/">J. Salmon </a> P. Bonnet and <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> .
+      </summary>
+      <b>Abstract:</b>
+The Pl@ntNet system enables global data collection by allowing users to upload and annotate plant observations, leading to noisy labels due to diverse user skills. Achieving consensus is crucial for training, but the vast scale of collected data makes traditional label aggregation strategies challenging. Additionally, as many species are rarely observed, user expertise can not be evaluated as an inter-user agreement: otherwise, botanical experts would have a lower weight in the training step than the average user as they have fewer but precise  articipation. Our proposed label aggregation strategy aims to cooperatively train plant identification models. This strategy estimates user expertise as a trust score per worker based on their ability to identify plant species from crowdsourced data.
+The trust score is recursively estimated from correctly identified species given the current estimated labels. This interpretable score exploits botanical experts’ knowledge and the heterogeneity of users. We evaluate our strategy on a large subset of the Pl@ntNet database focused on European flora, comprising over 6 000 000 observations and 800 000 users. We
+demonstrate that estimating users’ skills based on the diversity of their expertise enhances labeling performance.
+    </details>
+    <p>
+      [<a href="{{ site.url }}/_data/papers/jds24.pdf">paper</a>]
+    </p>
+  </li>
+</ul>
+<ul>
 
 <ul>
   <li>
