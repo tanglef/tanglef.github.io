@@ -21,16 +21,15 @@ You can contact me at:
 
 ## Research interests
 
-* Machine Learning - Deep Learning for image classification
+* Applied Machine Learning - Deep Learning for image classification
 * Label uncertainty in crowdsourced data
 * Task difficulty for human classifications
+* Applications in ecology and biodiversity
+* Reproducible research and Open Science
 
 ## Other interests
 
-* Programming in data science: mostly **Python**, some **R**. Could also be in the Research interests section, but clearly this goes beyond research purposes.
-
-* Scientific vulgarization:
-    * in books: Ian Stewart with *Flatterland*, the sequel of the famous *Flatland* or *The mathematics of life* by the same author, *The godess of small victories* by Yannick Grannec...
-    * in videos: [Dimensions](http://www.dimensions-math.org/) and its brother [Chaos](https://www.chaos-math.org/fr.html), [Sciences étonnantes](https://scienceetonnante.com/)...
-
-* Comic-books: Not data-science-related, but a very good escape from it all.
+* Programming in data science: mostly **Python**, some **R**. Could also be in the Research interests section, but clearly this goes beyond research purposes
+* Running: Not an athlete, but it really helps to clear the mind
+* Comic-books: Not data-science-related, but a very good escape from it all
+* Plants: I have (quite) a few, and I'm trying to keep them alive
