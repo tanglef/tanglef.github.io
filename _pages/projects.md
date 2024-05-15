@@ -72,6 +72,17 @@ Based on the thesis work of Florent Bascou.
 
  {% include feature_row id="internship" %}
 
+# Solving definite positive systems and optimal transport fields with KeOps library
+
+Internship during the masyer with Benjamin Charlier.
+The goal was to implement scipy's Fortran implementation of the conjugate gradient descent in KeOps with time and memory optimization. We also took examples from the optimal transport field to explore the efficiency of the library.
+
+<p>
+
+  [<a href="{{ site.url }}/_data/papers/Choices_for_the_algo_Kernsolve.pdf">Report</a>]
+
+</p>
+
 # Chaoseverywhere package
 
  The main goal of this project was to create a **fully-documented Python package** that allows the user to visualization the link between the bifurcation diagram of the logistic map and the Mandelbrot set. Software Development group project. Made with Coiffier Ophélie and Gaizi Ibrahim.
