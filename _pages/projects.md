@@ -74,7 +74,7 @@ Based on the thesis work of Florent Bascou.
 
 # Solving definite positive systems and optimal transport fields with KeOps library
 
-Internship during the masyer with Benjamin Charlier.
+Internship during the master with Benjamin Charlier.
 The goal was to implement scipy's Fortran implementation of the conjugate gradient descent in KeOps with time and memory optimization. We also took examples from the optimal transport field to explore the efficiency of the library.
 
 <p>
