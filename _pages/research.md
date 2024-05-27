@@ -121,6 +121,9 @@ In supervised learning — for instance in image classification — modern massi
 
 # Talks
 
+- May 2024: *Cooperative data enrichment algorithms* at [Journées des Statistiques de France (JDS) 2024](https://jds2024.sciencesconf.org/resource/page/id/18) Univ. Bordeaux.
+[<a href="{{ site.url }}/_data/communication/beamer_jds24.pdf">slides</a>]
+
 <ul>
   <li>
     <details>
