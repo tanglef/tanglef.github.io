@@ -35,7 +35,7 @@ by <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://x.com/a
 <li><details>
 <summary>
   <img src="{{ site.url }}/_data/images/pipeline_peerannot.png" style="max-width: 100px; height: auto; float: left; margin-right: 5px;">
-2023 <i>Peerannot: classification for crowdsourced image datasets with Python</i>
+2024 <i>Peerannot: classification for crowdsourced image datasets with Python</i>
 by  <a href="https://tanglef.github.io/">T. Lefort </a>, <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> in Computo </summary>
 <b> Abstract: </b>
 Crowdsourcing is a quick and easy way to collect labels for large datasets, involving many workers. However, workers often disagree with each other. Sources of error can arise from the workers’ skills, but also from the intrinsic difficulty of the task. We present peerannot: a Python library for managing and learning from crowdsourced labels for classification. Our library allows users to aggregate labels from common noise models or train a deep learning-based classifier directly from crowdsourced labels. In addition, we provide an identification module to easily explore the task difficulty of datasets and worker capabilities. </details>
