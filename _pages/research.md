@@ -89,6 +89,17 @@ Numerical validation is at the core of machine learning research as it allows to
       [<a href="{{ site.url }}/_data/papers/cap24.pdf">paper</a>]
     </p>
   </li>
+    <li>
+    <details>
+      <summary>
+        May 2024: <i>peerannot: A framework for label aggregation in crowdsourced datasets</i>, JDS 2024 by  A. Dubar, <a href="https://tanglef.github.io/">T. Lefort </a> and <a href="http://josephsalmon.eu/">J. Salmon </a>.
+      </summary>
+      <b>Abstract:</b>
+      Ce travail présente peerannot, une librairie de classification de données dont les étiquettes sont générées par production participative. Elle est écrite en Python et permet d’établir une comparaison des méthodes de classification par agŕegation avec d'utres librairies de référence.    </details>
+    <p>
+      [<a href="https://hal.science/hal-04562830v1">paper</a>]
+    </p>
+  </li>
   <li>
     <details>
       <summary>
