@@ -16,6 +16,11 @@ classes: wide
 
 {% include feature_row id="intro" type="center" %}
 
+# Thesis
+
+*Label ambiguity in crowdsourcing for classification and expert feedback* supervised by <a href="https://imag.umontpellier.fr/~charlier/index.php?page=index">B. Charlier </a>, <a href="http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php"> A. Joly </a> and <a href="http://josephsalmon.eu/">J. Salmon </a> at the University of Montpellier and INRIA ZENITH Montpellier. (2021-2024)
+\[[thesis]({{ site.url }}/_data/papers/thesis.pdf)\]
+
 # Publications
 
 ## Journals
