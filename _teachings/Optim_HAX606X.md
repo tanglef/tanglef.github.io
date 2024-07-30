@@ -5,7 +5,7 @@ falling:
     alt: "surface"
 ---
 
-This is an undergraduate course (in French!) introducing standard techniques from convex optimization. Numerical elements are provided in Python. Codes and questions are written with [Joseph Salmon](http://josephsalmon.eu) and [Amélie Vernay](https://github.com/AmelieVernay).
+This is an undergraduate course (in French!) introducing standard techniques from convex optimization. Numerical elements are provided in Python. Codes and questions are written with [Joseph Salmon](http://josephsalmon.eu) and [Amélie Vernay](https://github.com/AmelieVernay). Main course is given by Fabien Marche.
 
 $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
 {% include feature_row id="falling" type="center" %}
