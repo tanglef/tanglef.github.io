@@ -6,7 +6,7 @@ author_profile: true
 
 ## Next position
 
-Actively looking for a postdoctoral position in applied Machine Learning and computer science beginning 10-2024.
+Postdoc in Machine Learning and computer. (Don't hesitate to contact me if you have any opportunities!)
 
 
 ## General
