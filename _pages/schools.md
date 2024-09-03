@@ -19,3 +19,4 @@ classes: wide
 
 - 05/08-2024: Co-supervisor of Guillaume Demoor (Mines Alès) for a master's internship with [G. Durif](https://gdurif.perso.math.cnrs.fr/) and F-D. Collin on *Converting math formula images to LaTeX encoding with machine learning*
 - 11/12-2023: supervisor of four M2 students in statistics for the creation of a workshop in data visualization for omics datasets for the [Montpellier Omics Days](https://montpellier-omics-days.fr/programme.php)
+
