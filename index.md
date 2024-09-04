@@ -4,9 +4,9 @@ title: ""
 author_profile: true
 ---
 
-## Next position
+<!-- ## Next position
 
-Postdoc in Machine Learning and computer. (Don't hesitate to contact me if you have any opportunities!)
+Postdoc in Machine Learning and computer. (Don't hesitate to contact me if you have any opportunities!) -->
 
 
 ## General
