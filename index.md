@@ -13,7 +13,7 @@ I did my Ph.D (defense in 09/2024)n under the the supervision of [Joseph Salmon]
 
 You can contact me at:
 
-* [tanguy.lefort@umontpellier.fr](mailto:tanguy.lefort@umontpellier.fr)
+* [tanguy.lefort@inria.fr](mailto:tanguy.lefort@inria.fr)
 
 ## Research interests
 
