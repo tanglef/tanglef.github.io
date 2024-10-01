@@ -4,16 +4,12 @@ title: ""
 author_profile: true
 ---
 
-<!-- ## Next position
-
-Postdoc in Machine Learning and computer. (Don't hesitate to contact me if you have any opportunities!) -->
-
 
 ## General
 
-I'm currently a PhD student in Statistics in Montpellier, France.
+I'm currently a PostDoc in Statistics in Lille, France at the INRIA under the supervision of [Odalric-Ambrym Maillard](https://odalric-ambrymmaillard.github.io/) in the SCOOL team.
 
-I am under the supervision of [Joseph Salmon](http://josephsalmon.eu/), [Benjamin Charlier](https://imag.umontpellier.fr/~charlier/index.php?page=index) and [Alexis Joly](http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php) at Institut Montpelliérain Alexander Grothendieck (IMAG - University of Montpellier) and the INRIA Montpellier.
+I did my Ph.D (defense in 09/2024)n under the the supervision of [Joseph Salmon](http://josephsalmon.eu/), [Benjamin Charlier](https://imag.umontpellier.fr/~charlier/index.php?page=index) and [Alexis Joly](http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php) at Institut Montpelliérain Alexander Grothendieck (IMAG - University of Montpellier) and the INRIA Montpellier.
 
 You can contact me at:
 
@@ -21,11 +17,12 @@ You can contact me at:
 
 ## Research interests
 
-* Applied Machine Learning - Deep Learning for image classification
 * Label uncertainty in crowdsourced data
+* Recommender systems with crowdsourcing
 * Task difficulty for human classifications
 * Applications in ecology and biodiversity
 * Reproducible research and Open Science
+* Applied Machine Learning - Deep Learning for image classification
 
 ## Other interests
 
