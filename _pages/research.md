@@ -149,6 +149,9 @@ In supervised learning — for instance in image classification — modern massi
 
 # Talks
 
+- November 2024: *Keeping humans in the loop via citizen science* at Univ. Lille.
+\[[slides](https://tanglef.github.io/pres_master_lille_2024/)\]
+
 - July 2024: *Crowdsourcing and citizen science: how to handle our data?* at INRIA Lille, SCOOL team.
 \[[slides](https://tanglef.github.io/inria_postdoc2024/)\]
 
