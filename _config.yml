@@ -101,7 +101,7 @@ defaults:
 author:
   name: "Tanguy Lefort"
   avatar: "https://scholar.googleusercontent.com/citations?view_op=view_photo&user=BWIOpfEAAAAJ&citpid=1&authuser=1"
-  bio: "PhD Student in statistics" # Note: Markdown is allowed
+  bio: "PostDoc in statistics (INRIA Lille)" # Note: Markdown is allowed
   location: "Montpellier, France"
   email            : "tanguy_l@outlook.fr"
   uri              :
