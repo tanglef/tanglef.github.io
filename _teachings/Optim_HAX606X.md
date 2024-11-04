@@ -45,7 +45,7 @@ $$f(x, y) = \frac{xy}{1+e^{x^2 - y^2}}$$
 
 <h2> Annales </h2>
 <ul>
-<li> sujet CT: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/2023/ct2024.html">[CT2024]</a> </li>
+<li> sujet CT: <a href="{{ site.url }}/_teachings/data/HAX606X_optim/2024/ct2024.html">[CT2024]</a> </li>
 </ul>
 
 # 2022-2023
