@@ -18,6 +18,7 @@ You can contact me at:
 ## Research interests
 
 * Label uncertainty in crowdsourced data
+* Computer vision
 * Recommender systems with crowdsourcing
 * Task difficulty for human classifications
 * Applications in ecology and biodiversity
