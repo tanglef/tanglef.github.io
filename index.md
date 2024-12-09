@@ -9,7 +9,7 @@ author_profile: true
 
 I'm currently a PostDoc in Statistics in Lille, France at the INRIA under the supervision of [Odalric-Ambrym Maillard](https://odalric-ambrymmaillard.github.io/) in the SCOOL team.
 
-I did my Ph.D (defense in 09/2024)n under the the supervision of [Joseph Salmon](http://josephsalmon.eu/), [Benjamin Charlier](https://imag.umontpellier.fr/~charlier/index.php?page=index) and [Alexis Joly](http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php) at Institut Montpelliérain Alexander Grothendieck (IMAG - University of Montpellier) and the INRIA Montpellier.
+I did my Ph.D (defense in 09/2024) under the the supervision of [Joseph Salmon](http://josephsalmon.eu/), [Benjamin Charlier](https://imag.umontpellier.fr/~charlier/index.php?page=index) and [Alexis Joly](http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php) at Institut Montpelliérain Alexander Grothendieck (IMAG - University of Montpellier) and the INRIA Montpellier.
 
 You can contact me at:
 
