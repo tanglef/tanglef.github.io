@@ -149,6 +149,9 @@ In supervised learning — for instance in image classification — modern massi
 
 # Talks
 
+- January 2024: *Enhancing Crowdsourced Plant Identification: From Label Aggregation to Personalized Recommendations* at INRAE Paris-Saclay
+[<a href="{{ site.url }}/_data/communication/beamer_inrae.pdf">slides</a>]
+
 - November 2024: *Keeping humans in the loop via citizen science* at Univ. Lille.
 \[[slides](https://tanglef.github.io/pres_master_lille_2024/)\]
 
