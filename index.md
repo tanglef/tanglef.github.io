@@ -15,7 +15,7 @@ I did my Ph.D (defense in 09/2024) under the the supervision of [Joseph Salmon](
 
 You can contact me at:
 
-* [tanguy.lefort@seenovate.fr](mailto:tanguy.lefort@seenovate.fr)
+* [tanguy.lefort@seenovate.com](mailto:tanguy.lefort@seenovate.com)
 
 ## Research interests
 
