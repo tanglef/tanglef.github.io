@@ -1,10 +1,10 @@
 ---
-title: "Small CV"
+title: "CV"
 permalink: /cv/
 classes: wide
 ---
 
-## Full-CV (last update 11-2023)
+## Full-CV (last update 12-2025)
 
 * English version [CV]({{ site.url }}/_data/Academic_CV_lefort.pdf)
 
