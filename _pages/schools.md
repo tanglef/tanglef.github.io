@@ -4,12 +4,18 @@ permalink: /cv/
 classes: wide
 ---
 
-## Full-CV (last update 12-2025)
+## Short CV 
+
+* French version [CV]({{ site.url }}/_data/CV_court.pdf)
+
+## Academic-CV (last update 12-2025)
 
 * English version [CV]({{ site.url }}/_data/Academic_CV_lefort.pdf)
 
 ## The road so far...
 
+- Since 2025: Data consultant at [Seenovate](https://www.seenovate.com/), Lead tech computer vision in the [SeeSports team](https://seesports.fr/)
+- 2024-2025: Postdoc INRIA Lille for recommender systems and uncertainty for Pl@ntNet 
 - 2022-2023: CO-organizer of the [IMAG PhD seminar](https://imag.umontpellier.fr/?page_id=625&idsem=596) with [Pablo Montealegre](https://sites.google.com/view/pablo-montealegre-math) and [Hermès Lajoinie](https://sites.google.com/view/hermeslajoinie-dodel/home)
 - 2021-2024: P.h.D in Statistics/Machine learning under the supervision of [Joseph Salmon](josephsalmon.eu/), [Benjamin Charlier](https://imag.umontpellier.fr/~charlier/index.php?page=index) and [Alexis Joly](http://www-sop.inria.fr/members/Alexis.Joly/wiki/pmwiki.php) at Institut Montpelliérain Alexander Grothendieck (IMAG - University of Montpellier) and the INRIA Montpellier
 - 2019-2021: Master's degree in Biostatistics, University of Montpellier, France
